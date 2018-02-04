@@ -4,7 +4,7 @@
   "description": "A mobile first frontend framework made with wine",
   "main": "dist/chablis.js",
   "scripts": {
-    "storybook": "build-storybook -c .storybook -o .out",
+    "storybook": "build-storybook -c .storybook -o docs",
     "start": "start-storybook -p 9001 -c .storybook",
     "test": "jest",
     "lint": "eslint src/**; exit 0",
