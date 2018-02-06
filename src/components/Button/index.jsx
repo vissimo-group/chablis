@@ -52,8 +52,8 @@ const ActionButton = styled.button`
 export default class Button extends PureComponent {
   static propTypes = {
     children: PropTypes.string.isRequired,
-    fluid: PropTypes.bool,
     onClick: PropTypes.func,
+    fluid: PropTypes.bool,
     secondary: PropTypes.bool,
     disabled: PropTypes.bool,
     thin: PropTypes.bool,
