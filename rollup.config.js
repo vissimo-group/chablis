@@ -27,7 +27,7 @@ export default {
   external: ['react'].concat(Object.keys(pkg.dependencies)),
   plugins: commonPlugins,
   output: {
-    file: 'dist/chablis.js',
+    file: 'dist/chablis.min.js',
     globals: { react: 'React' },
     sourcemap: true,
     format: 'cjs',
