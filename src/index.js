@@ -1,6 +1,6 @@
 // Buttons
-import ActionButton from './components/Buttons/ActionButton';
+import Button from './components/Button';
 
 export default {
-  ActionButton,
+  Button,
 };

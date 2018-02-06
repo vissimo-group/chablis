@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { colors, sizes, fontSizes, fontWeights } from '../../../styles/variables';
+import { colors, sizes, fontSizes, fontWeights } from '../../styles/variables';
 
-const Button = styled.button`
+const ActionButton = styled.button`
   width: 300px;
   height: 50px;
   background: ${colors.PRIMARY};
@@ -49,7 +49,7 @@ const Button = styled.button`
   `}
 `;
 
-export default class ActionButton extends PureComponent {
+export default class Button extends PureComponent {
   static propTypes = {
     children: PropTypes.string.isRequired,
     fluid: PropTypes.bool,
@@ -61,7 +61,7 @@ export default class ActionButton extends PureComponent {
 
   render() {
     return (
-      <Button {...this.props}>{this.props.children}</Button>
+      <ActionButton {...this.props}>{this.props.children}</ActionButton>
     );
   }
 }
