@@ -1,4 +1,6 @@
-stories/
 .storybook/
 rollup.config.*
 .*
+src/
+docs/
+scripts/
