@@ -18,7 +18,9 @@
     "chablis",
     "wine",
     "evino",
-    "frontend"
+    "frontend",
+    "styled-components",
+    "storybook"
   ],
   "repository": {
     "type": "git",
