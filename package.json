@@ -2,13 +2,13 @@
   "name": "chablis",
   "version": "0.1.0",
   "description": "A mobile first frontend framework made with wine",
-  "main": "dist/chablis.js",
+  "main": "dist/chablis.min.js",
   "scripts": {
     "storybook": "build-storybook -c .storybook -o docs",
     "start": "start-storybook -p 9001 -c .storybook",
-    "test": "jest",
+    "test": "NODE_ENV=test jest",
     "lint": "eslint src/**; exit 0",
-    "build": "rollup -c",
+    "build": "NODE_ENV=production rollup -c",
     "dev": "rollup -c -w",
     "publish": "./scripts/precommit.sh",
     "setup": "chmod +x scripts/precommit.sh"
@@ -35,10 +35,13 @@
     "@storybook/addon-info": "^3.3.12",
     "@storybook/react": "^3.3.11",
     "babel-core": "^6.26.0",
+    "babel-jest": "^22.2.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.0.5",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
@@ -65,6 +68,11 @@
     "run": [
       "setup",
       "publish"
+    ]
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/config.js"
     ]
   }
 }

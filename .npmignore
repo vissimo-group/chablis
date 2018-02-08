@@ -4,3 +4,4 @@ rollup.config.*
 src/
 docs/
 scripts/
+test/
