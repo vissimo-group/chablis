@@ -7,6 +7,8 @@
 
 <br>
 
+![circleCI](https://circleci.com/gh/Evino/chablis.svg?style=shield)
+
 It is still in early development
 
 ## Examples
