@@ -1,6 +1,6 @@
 export const colors = {
   PRIMARY: '#1ABC9C',
-  PRIMARY_DARKEN: '#009676',
+  PRIMARY_DARKEN: '#16A085',
   SECONDARY: '#ED0E32',
   WHITE: '#FFFFFF',
   LIGHTEST_GREY: '#DCDCDC',

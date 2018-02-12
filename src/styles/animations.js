@@ -1,24 +1,18 @@
 import { keyframes } from 'styled-components';
 
-export const zoomIn = keyframes`
+export const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
   }
 
-  50% {
+  to {
     opacity: 1;
   }
 `;
 
-export const zoomOut = keyframes`
+export const fadeOut = keyframes`
   from {
     opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-    transform: scale3d(.3, .3, .3);
   }
 
   to {
