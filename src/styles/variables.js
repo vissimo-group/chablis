@@ -12,6 +12,8 @@ export const colors = {
 
 export const sizes = {
   DEFAULT: '10px',
+  LARGE: '20px',
+  HALF: '5px',
   RADIUS: '4px',
   FULL: '100%',
 };
