@@ -6,7 +6,22 @@
     "jest": true
   },
   "rules": {
+    "max-len": [
+      2,
+      124,
+      4
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
     "react/prefer-stateless-function": false,
-    "react/jsx-filename-extension": false
+    "import/no-named-as-default": false,
+    "import/no-named-as-default-member": false
   }
 }
