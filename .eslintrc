@@ -1,4 +1,5 @@
 {
+  "parser": "babel-eslint",
   "extends": "airbnb",
   "env": {
     "browser": true,
@@ -20,8 +21,6 @@
         ]
       }
     ],
-    "react/prefer-stateless-function": false,
-    "import/no-named-as-default": false,
-    "import/no-named-as-default-member": false
+    "react/prefer-stateless-function": false
   }
 }

@@ -70,18 +70,18 @@ export default class Tooltip extends PureComponent {
     text: PropTypes.string.isRequired,
     spaced: PropTypes.bool,
     show: PropTypes.bool,
-    element: PropTypes.element,
     align: PropTypes.oneOf([
       'bottom-start',
       'bottom-end',
       'top-start',
-      'top-end'
+      'top-end',
     ]),
     type: PropTypes.oneOf(['default', 'success', 'danger']),
   }
 
   static defaultProps = {
     show: true,
+    spaced: false,
     align: 'top-end',
     type: 'default',
   }
