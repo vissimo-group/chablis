@@ -29,7 +29,7 @@ export default HelloButton;
 ## Installation
 
 ```bash
-yarn add chablis
+yarn add github:Evino/chablis
 ```
 
 But all commands run with `npm` as well.
