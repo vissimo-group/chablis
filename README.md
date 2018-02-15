@@ -2,7 +2,7 @@
   <h3 align="center">Chablis</h3>
 
   <p align="center">
-    A mobile first frontend framework made with wine.
+    A mobile first frontend framework made with ( evino ).
 </p>
 
 <br>

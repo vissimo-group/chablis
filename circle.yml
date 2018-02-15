@@ -20,3 +20,6 @@ deployment:
       branch: master
       commands:
         #publish
+        curl -u [USERNAME]:[PASSWORD] https://registry.npmjs.org/-/npm/v1/tokens \
+        -X POST -H 'content-type: application/json' \
+        -d '{"password":"[PASSWORD]", "readonly": "true"}'
