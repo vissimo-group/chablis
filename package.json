@@ -50,6 +50,7 @@
     "eslint-plugin-react": "^7.6.1",
     "jest": "^22.1.4",
     "pre-commit": "^1.2.2",
+    "react-test-renderer": "^16.2.0",
     "rollup": "^0.55.3",
     "rollup-plugin-alias": "^1.4.0",
     "rollup-plugin-babel": "^3.0.3",
@@ -72,8 +73,17 @@
     ]
   },
   "jest": {
+    "bail": true,
     "setupFiles": [
       "./test/config.js"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
   }
 }

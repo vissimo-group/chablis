@@ -1,25 +1,31 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import renderer from 'react-test-renderer';
 import Button from './';
 
 const onClick = jest.fn();
-const component = mount(<Button onClick={onClick}>Button</Button>);
+const element = <Button onClick={onClick}>Button</Button>;
+const component = mount(element);
 
 const click = () => {
   component.find('button').simulate('click');
 };
 
 describe('Button', () => {
-  it('Should render a button', () => {
-    expect(component.find('button')).toBeTruthy();
+  it('should render a button', () => {
+    const tree = renderer
+      .create(element)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
   });
 
-  it('Should allow client`s click', () => {
+  it('should allow client`s click', () => {
     click();
     expect(onClick).toHaveBeenCalledTimes(1);
   });
 
-  it('Should not allow client`s click', () => {
+  it('should not allow client`s click', () => {
     component.setProps({ disabled: true });
     click();
     expect(onClick).toHaveBeenCalledTimes(1);

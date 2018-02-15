@@ -15,9 +15,9 @@ const TooltipWrapper = styled.span`
   max-width: 300px;
   text-align: center;
   animation: ${fadeIn} .2s ease-in;
-  display: ${props => props.show ? 'block' : 'none'};
+  display: ${props => (props.show ? 'block' : 'none')};
   ${props => props.alignY}: calc(100% + 12px);
-  ${props => props.alignX}: ${props => props.spaced ? '-55px' : '5px'};
+  ${props => props.alignX}: ${props => (props.spaced ? '-55px' : '5px')};
 
   ${props => props.type === 'default' && css`
     background: ${colors.LIGHTEST_GREY}};
@@ -43,7 +43,7 @@ const TooltipWrapper = styled.span`
     border-top: 9px solid;
     width: 0;
     position: absolute;
-    ${props => props.alignX}: ${props => props.spaced ? '80px' : '20px'};
+    ${props => props.alignX}: ${props => (props.spaced ? '80px' : '20px')};
     ${props => props.alignY}: -9px;
 
     ${props => props.alignY === 'top' && css`

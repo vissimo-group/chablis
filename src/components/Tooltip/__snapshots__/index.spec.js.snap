@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip should render a tooltip 1`] = `
+<span
+  className="sc-bdVaJa DBSDn"
+  type="default"
+>
+  This is a tooltip
+</span>
+`;
