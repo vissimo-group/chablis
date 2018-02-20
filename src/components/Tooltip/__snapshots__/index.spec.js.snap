@@ -2,7 +2,7 @@
 
 exports[`Tooltip should render a tooltip 1`] = `
 <span
-  className="sc-bdVaJa DBSDn"
+  className="sc-bdVaJa hSgxmp"
   type="default"
 >
   This is a tooltip
