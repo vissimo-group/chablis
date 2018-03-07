@@ -4,7 +4,8 @@ import styled, { css } from 'styled-components';
 import { colors, sizes, fontSizes, fontWeights } from '../../styles/variables';
 
 const ActionButton = styled.button`
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   height: 50px;
   background: ${colors.PRIMARY};
   font-size: ${fontSizes.SMALL};
@@ -35,7 +36,7 @@ const ActionButton = styled.button`
   `}
 
   ${props => props.fluid && css`
-    width: ${sizes.FULL};
+    max-width: ${sizes.FULL};
   `}
 
   ${props => props.secondary && css`
