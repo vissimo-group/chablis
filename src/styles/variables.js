@@ -11,11 +11,19 @@ export const colors = {
 };
 
 export const sizes = {
-  DEFAULT: '10px',
-  LARGE: '20px',
-  HALF: '5px',
+  DEFAULT: '16px',
+  LARGE: '32px',
+  HALF: '8px',
   RADIUS: '4px',
   FULL: '100%',
+};
+
+export const breakpoints = {
+  EXTRASMALL: '480px',
+  SMALL: '768px',
+  NORMAL: '1024px',
+  BIG: '1280px',
+  LARGE: '1440px',
 };
 
 export const fontSizes = {
