@@ -1,6 +1,6 @@
 import Button from './components/Button';
 import Tooltip from './components/Tooltip';
-import Grid from './components/Grid';
+import * as Grid from './components/Grid';
 
 export default {
   Button,

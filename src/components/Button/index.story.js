@@ -1,20 +1,23 @@
 /* eslint-disable */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
 import Button from './';
+
+const action = param => {
+  alert(param);
+}
 
 storiesOf('Button', module)
   .addWithInfo('Primary Button', () => (
     <Button
-      onClick={action('clicked')}
+      onClick={action.bind(this, 'clicked')}
     >
       Primary Button
     </Button>
   ))
   .addWithInfo('Fluid Button', () => (
     <Button
-      onClick={action('clicked')}
+      onClick={action.bind(this, 'clicked')}
       fluid
     >
       Fluid Button
@@ -22,7 +25,7 @@ storiesOf('Button', module)
   ))
   .addWithInfo('Thin Button', () => (
     <Button
-      onClick={action('clicked')}
+      onClick={action.bind(this, 'clicked')}
       thin
     >
       Thin Button
@@ -30,7 +33,7 @@ storiesOf('Button', module)
   ))
   .addWithInfo('Disabled Button', () => (
     <Button
-      onClick={action('clicked')}
+      onClick={action.bind(this, 'clicked')}
       disabled
     >
       Disabled Button
@@ -38,7 +41,7 @@ storiesOf('Button', module)
   ))
   .addWithInfo('Secondary Button', () => (
     <Button
-      onClick={action('clicked')}
+      onClick={action.bind(this, 'clicked')}
       secondary
     >
       Secondary Button

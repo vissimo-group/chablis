@@ -159,3 +159,26 @@ storiesOf('Grid', module)
       </div>
     </div>
   ))
+  .addWithInfo('Spaced Columns', () => (
+    <div>
+      <Container>
+        <div style={{
+          ...containerStyle,
+          height: '200px'
+        }}>
+          <Row styles={'height: 100%'} align="center">
+            <Column mobile={4} offsetMobile={4}>
+              <div style={columStyle}>Spaced column</div>
+            </Column>
+            <Column mobile={4}>
+              <div style={columStyle}>Column</div>
+            </Column>
+          </Row>
+        </div>
+      </Container>
+      <div style={legendStyle}>
+        <div style={legendBlockStyle}></div>
+        Usable area
+      </div>
+    </div>
+  ))
