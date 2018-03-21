@@ -13,15 +13,6 @@ const style = {
   borderRadius: sizes.RADIUS,
 };
 
-const columStyle = {
-  width: sizes.FULL,
-  background: colors.PRIMARY,
-  color: colors.WHITE,
-  padding: `${sizes.DEFAULT} 0`,
-  textAlign: 'center',
-  borderRadius: sizes.RADIUS,
-};
-
 const containerStyle = {
   background: colors.LIGHT_GREY,
   padding: `${sizes.DEFAULT} 0`,
@@ -87,16 +78,16 @@ storiesOf('Grid', module)
         <div style={containerStyle}>
           <Row>
             <Column mobile={12} tablet={6} desktop={3}>
-              <div style={columStyle}>Column 1</div>
+              <div style={style}>Column 1</div>
             </Column>
             <Column mobile={12} tablet={6} desktop={3}>
-              <div style={columStyle}>Column 2</div>
+              <div style={style}>Column 2</div>
             </Column>
             <Column mobile={12} tablet={6} desktop={3}>
-              <div style={columStyle}>Column 3</div>
+              <div style={style}>Column 3</div>
             </Column>
             <Column mobile={12} tablet={6} desktop={3}>
-              <div style={columStyle}>Column 4</div>
+              <div style={style}>Column 4</div>
             </Column>
           </Row>
         </div>
@@ -116,13 +107,13 @@ storiesOf('Grid', module)
         }}>
           <Row styles={'height: 100%'} align="center">
             <Column mobile={4}>
-              <div style={columStyle}>Column 1</div>
+              <div style={style}>Column 1</div>
             </Column>
             <Column mobile={4}>
-              <div style={columStyle}>Column 2</div>
+              <div style={style}>Column 2</div>
             </Column>
             <Column mobile={4}>
-              <div style={columStyle}>Column 3</div>
+              <div style={style}>Column 3</div>
             </Column>
           </Row>
         </div>
@@ -142,13 +133,13 @@ storiesOf('Grid', module)
         }}>
           <Row styles={'height: 100%'}>
             <Column mobile={4} align="flex-start">
-              <div style={columStyle}>Column 1</div>
+              <div style={style}>Column 1</div>
             </Column>
             <Column mobile={4} align="center">
-              <div style={columStyle}>Column 2</div>
+              <div style={style}>Column 2</div>
             </Column>
             <Column mobile={4} align="flex-end">
-              <div style={columStyle}>Column 3</div>
+              <div style={style}>Column 3</div>
             </Column>
           </Row>
         </div>
@@ -168,10 +159,10 @@ storiesOf('Grid', module)
         }}>
           <Row styles={'height: 100%'} align="center">
             <Column mobile={4} offsetMobile={4}>
-              <div style={columStyle}>Spaced column</div>
+              <div style={style}>Spaced column</div>
             </Column>
             <Column mobile={4}>
-              <div style={columStyle}>Column</div>
+              <div style={style}>Column</div>
             </Column>
           </Row>
         </div>
