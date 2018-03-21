@@ -21,6 +21,7 @@
         ]
       }
     ],
-    "react/prefer-stateless-function": false
+    "react/prefer-stateless-function": false,
+    "react/require-default-props": false
   }
 }

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container should render a container div 1`] = `
+<div
+  className="sc-bdVaJa loqcoW"
+>
+  <span>
+    Subcomponent
+  </span>
+</div>
+`;
