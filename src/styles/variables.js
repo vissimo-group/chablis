@@ -27,6 +27,7 @@ export const breakpoints = {
 };
 
 export const fontSizes = {
+  HUGE: '36px',
   LARGE: '20px',
   NORMAL: '16px',
   SMALL: '14px',

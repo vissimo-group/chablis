@@ -7,7 +7,7 @@ import { fadeIn } from '../../styles/animations';
 const TooltipWrapper = styled.span`
   font-size: ${fontSizes.EXTRASMALL};
   font-weight: ${fontWeights.LIGHT};
-  padding: ${sizes.HALF} ${sizes.LARGE};
+  padding: ${sizes.HALF} ${sizes.DEFAULT};
   color: ${colors.WHITE};
   border-radius: ${sizes.RADIUS};
   position: absolute;
