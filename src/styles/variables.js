@@ -1,13 +1,14 @@
 export const colors = {
   PRIMARY: '#1ABC9C',
   PRIMARY_DARKEN: '#16A085',
-  SECONDARY: '#ED0E32',
+  SECONDARY: '#F93030',
   WHITE: '#FFFFFF',
   LIGHTEST_GREY: '#DCDCDC',
   LIGHT_GREY: '#D3D3D3',
   MEDIUM_GREY: '#C0C0C0',
   DARK_GREY: '#808080',
   DARKEST_GREY: '#696969',
+  BLACK: '#20201E',
 };
 
 export const sizes = {

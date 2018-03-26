@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { fontSizes, fontWeights, sizes } from '../../../styles/variables';
+import { fontSizes, fontWeights, sizes, colors } from '../../../styles/variables';
 
 const Title = styled.h2`
   font-size: ${fontSizes.HUGE};
@@ -9,7 +9,7 @@ const Title = styled.h2`
   padding: ${sizes.LARGE} 0;
   text-align: center;
   display: block;
-
+  color: ${colors.BLACK};
 `;
 
 export default class Button extends PureComponent {
