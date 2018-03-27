@@ -4,4 +4,4 @@ rm -rf dist/ docs/
 npm run storybook
 npm run build
 
-git add dist/ docs/
+git add .

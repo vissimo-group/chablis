@@ -11,7 +11,7 @@ const RowDiv = styled.div`
   flex-flow: row wrap;
   align-items: ${props => props.align};
 
-  @media(min-width: ${breakpoints.EXTRASMALL}) {
+  @media(min-width: ${breakpoints.SMALL}) {
     padding: 0 ${sizes.HALF};
   }
 

@@ -20,7 +20,6 @@ export const sizes = {
 };
 
 export const breakpoints = {
-  EXTRASMALL: '480px',
   SMALL: '768px',
   NORMAL: '1024px',
   BIG: '1280px',

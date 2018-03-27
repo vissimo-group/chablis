@@ -2,7 +2,7 @@
 
 exports[`Title should render a title 1`] = `
 <h2
-  className="sc-bdVaJa eRMoMZ"
+  className="sc-bdVaJa hXSFTy"
 >
   This is a title
 </h2>

@@ -11,7 +11,7 @@ const ColumnDiv = styled.div`
   box-sizing: border-box;
   align-self: ${props => props.align};
 
-  @media(min-width: ${breakpoints.EXTRASMALL}) {
+  @media(min-width: ${breakpoints.SMALL}) {
     ${props => props.tablet && css`
       width: ${props.tablet * 8.333}%;
     `}
