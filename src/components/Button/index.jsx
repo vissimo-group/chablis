@@ -40,7 +40,7 @@ const ActionButton = styled.button`
   `}
 
   ${props => props.secondary && css`
-    background: ${colors.WHITE};
+    background: transparent;
     color: ${colors.PRIMARY};
   `}
 
