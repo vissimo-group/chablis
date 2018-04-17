@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { colors, sizes, fontSizes, fontWeights } from '../../styles/variables';
 
 const ActionButton = styled.button`
-  max-width: 300px;
+  max-width: 100%;
   width: 100%;
   height: 50px;
   background: ${colors.PRIMARY};
