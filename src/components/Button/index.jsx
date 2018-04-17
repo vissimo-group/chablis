@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { colors, sizes, fontSizes, fontWeights } from '../../styles/variables';
 
 const ActionButton = styled.button`
-  max-width: 100%;
+  max-width: 300px;
   width: 100%;
   min-height: 50px;
   background: ${colors.PRIMARY};
@@ -53,7 +53,7 @@ const ActionButton = styled.button`
 export default class Button extends PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
     fluid: PropTypes.bool,
     secondary: PropTypes.bool,
     disabled: PropTypes.bool,
