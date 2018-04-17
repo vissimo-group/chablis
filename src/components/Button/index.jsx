@@ -6,7 +6,7 @@ import { colors, sizes, fontSizes, fontWeights } from '../../styles/variables';
 const ActionButton = styled.button`
   max-width: 100%;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   background: ${colors.PRIMARY};
   font-size: ${fontSizes.SMALL};
   font-weight: ${fontWeights.MEDIUM};
