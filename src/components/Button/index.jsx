@@ -32,7 +32,7 @@ const ActionButton = styled.button`
   }
 
   ${props => props.thin && css`
-    height: 30px;
+    min-height: 30px;
   `}
 
   ${props => props.fluid && css`
