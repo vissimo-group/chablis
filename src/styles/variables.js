@@ -27,17 +27,18 @@ export const breakpoints = {
 };
 
 export const fontSizes = {
-  HUGE: '36px',
-  LARGE: '20px',
+  HUGE1: '48px',
+  HUGE2: '36px',
+  LARGE: '32px',
+  BIG: '20px',
   NORMAL: '16px',
   SMALL: '14px',
   EXTRASMALL: '12px',
+  TINY: '10px',
 };
 
 export const fontWeights = {
   LIGHT: '300',
   REGULAR: '400',
-  MEDIUM: '500',
-  SEMIBOLD: '600',
   BOLD: '700',
 };

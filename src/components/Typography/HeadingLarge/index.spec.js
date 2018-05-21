@@ -1,13 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Title from './';
+import HeadingLarge from './';
 
 const text = 'This is a title';
-const element = <Title>{text}</Title>;
+const element = <HeadingLarge>{text}</HeadingLarge>;
 const component = mount(element);
 
-describe('Title', () => {
+describe('HeadingLarge', () => {
   it('should render a title', () => {
     const tree = renderer
       .create(element)

@@ -5,7 +5,7 @@ import { colors, fontSizes, fontWeights, sizes } from '../../styles/variables';
 import { fadeIn } from '../../styles/animations';
 
 const TooltipWrapper = styled.span`
-  font-size: ${fontSizes.EXTRASMALL};
+  font-size: ${fontSizes.SMALL};
   font-weight: ${fontWeights.LIGHT};
   padding: ${sizes.HALF} ${sizes.DEFAULT};
   color: ${colors.WHITE};
