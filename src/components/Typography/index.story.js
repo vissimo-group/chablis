@@ -9,6 +9,7 @@ import {
   HeadingSmall,
   TitleLarge,
   TitleMedium,
+  TitleSmall,
 } from './';
 
 const title = "The quick brown fox jumps over the lazy dog."
@@ -63,4 +64,9 @@ storiesOf('Typography', module)
       <BodyLarge>{text}</BodyLarge>
     </div>
   ))
-BodySmall
+  .addWithInfo('Title Small', () => (
+    <div>
+      <TitleSmall>{title}</TitleSmall>
+      <BodyLarge>{text}</BodyLarge>
+    </div>
+  ));

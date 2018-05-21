@@ -1,13 +1,29 @@
 import Button from './components/Button';
 import Tooltip from './components/Tooltip';
 import { Container, Column, Row } from './components/Grid';
-import { Title } from './components/Typography';
+import {
+  BodyLarge,
+  BodyMedium,
+  BodySmall,
+  HeadingLarge,
+  HeadingSmall,
+  TitleLarge,
+  TitleMedium,
+  TitleSmall,
+} from './components/Typography';
 
 export default {
+  BodyLarge,
+  BodyMedium,
+  BodySmall,
   Button,
   Container,
   Column,
+  HeadingLarge,
+  HeadingSmall,
   Row,
-  Title,
+  TitleLarge,
+  TitleMedium,
+  TitleSmall,
   Tooltip,
 };
