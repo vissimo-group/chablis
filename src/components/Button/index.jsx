@@ -8,7 +8,7 @@ const ActionButton = styled.button`
   width: 100%;
   min-height: 50px;
   background: ${colors.PRIMARY};
-  font-size: ${fontSizes.NORMAL};
+  font-size: ${fontSizes.SMALL};
   font-weight: ${fontWeights.REGULAR};
   color: ${colors.WHITE};
   border: 1px solid ${colors.PRIMARY};
