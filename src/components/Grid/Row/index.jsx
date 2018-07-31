@@ -1,16 +1,19 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { sizes } from '../../../styles/variables';
+import { breakpoints, sizes } from '../../../styles/variables';
 
 
 const RowDiv = styled.div`
+  width: 100%;
   display: flex;
   box-sizing: border-box;
   flex-flow: row wrap;
   align-items: ${props => props.align};
-  margin-left: -${sizes.HALF};
-  margin-right: -${sizes.HALF};
+
+  @media(min-width: ${breakpoints.SMALL}) {
+    padding: 0 ${sizes.HALF};
+  }
 
   ${props => props.styles}
 `;
