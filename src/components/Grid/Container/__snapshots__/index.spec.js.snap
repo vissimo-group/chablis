@@ -2,7 +2,7 @@
 
 exports[`Container should render a container div 1`] = `
 <div
-  className="sc-bdVaJa iiMnNf"
+  className="sc-bdVaJa kmesuY"
 >
   <span>
     Subcomponent

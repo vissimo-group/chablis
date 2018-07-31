@@ -24,4 +24,9 @@ describe('Container', () => {
     component.setProps({ full: true });
     expect(component.prop('full')).toBeTruthy();
   });
+
+  it('should render the full version of container in some breakpoints', () => {
+    component.setProps({ full: false, fullTablet: true });
+    expect(component.prop('fullTablet')).toBeTruthy();
+  });
 });

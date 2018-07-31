@@ -2,7 +2,7 @@
 
 exports[`Row should render a row div 1`] = `
 <div
-  className="sc-bdVaJa ldQJtT"
+  className="sc-bdVaJa bAYzrn"
 >
   <span>
     Subcomponent
