@@ -2,7 +2,7 @@
 
 exports[`Column should render a column div 1`] = `
 <div
-  className="sc-bdVaJa bCOpbA"
+  className="Column__ColumnDiv-y3rs2d-0 hpLZBo"
 >
   <span>
     Subcomponent

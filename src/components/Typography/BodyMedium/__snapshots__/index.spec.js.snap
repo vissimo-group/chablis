@@ -2,7 +2,7 @@
 
 exports[`BodyLarge should render a text 1`] = `
 <p
-  className="sc-bdVaJa kWVTIZ"
+  className="BodyMedium__ParagraphComponent-sc-1h0ifth-0 cvLeZo"
 >
   This is a text
 </p>
