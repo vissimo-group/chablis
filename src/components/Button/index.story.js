@@ -39,6 +39,15 @@ storiesOf('Button', module)
       Disabled Button
     </Button>
   ))
+  .addWithInfo('Secondary Borderless Button', () => (
+    <Button
+      onClick={action.bind(this, 'clicked')}
+      borderless
+      secondary
+    >
+      Secondary Borderless Button
+    </Button>
+  ))
   .addWithInfo('Secondary Button', () => (
     <Button
       onClick={action.bind(this, 'clicked')}

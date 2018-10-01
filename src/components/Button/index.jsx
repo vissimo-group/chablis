@@ -18,11 +18,13 @@ const ActionButton = styled.button`
   display: block;
   transition: .3s;
 
-  &:hover {
-    background: ${colors.PRIMARY_DARKEN};
-    border-color: ${colors.PRIMARY_DARKEN};
-    color: ${colors.WHITE};
-  }
+  ${props => !props.borderless && css`
+    &:hover {
+      background: ${colors.PRIMARY_DARKEN};
+      border-color: ${colors.PRIMARY_DARKEN};
+      color: ${colors.WHITE};
+    }
+  `}
 
   &:disabled {
     cursor: default;
@@ -39,9 +41,13 @@ const ActionButton = styled.button`
     max-width: ${sizes.FULL};
   `}
 
+  ${props => props.borderless && css`
+    border: 0;
+  `}
+
   ${props => props.secondary && css`
     background: transparent;
-    color: ${colors.PRIMARY};
+    color: ${props.borderless ? colors.MEDIUM_GREY : colors.PRIMARY};
   `}
 
   ${props => props.secondary && props.disabled && css`
@@ -56,6 +62,7 @@ export default class Button extends PureComponent {
     onClick: PropTypes.func,
     fluid: PropTypes.bool,
     secondary: PropTypes.bool,
+    borderless: PropTypes.bool,
     disabled: PropTypes.bool,
     thin: PropTypes.bool,
   }
