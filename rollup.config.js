@@ -1,6 +1,6 @@
 import babel from 'rollup-plugin-babel';
 import json from 'rollup-plugin-json';
-import uglify from 'rollup-plugin-uglify';
+import { uglify } from 'rollup-plugin-uglify';
 import sourceMaps from 'rollup-plugin-sourcemaps';
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
@@ -13,7 +13,7 @@ const commonPlugins = [
   json(),
   sourceMaps(),
   uglify({
-    sourceMap: true,
+    sourcemap: true,
   }),
   commonjs(),
   babel({

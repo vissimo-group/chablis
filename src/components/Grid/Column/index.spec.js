@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Column from './';
+import Column from '.';
 
 const element = <Column mobile={12}><span>Subcomponent</span></Column>;
 const component = mount(element);

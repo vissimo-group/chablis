@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import HeadingSmall from './';
+import HeadingSmall from '.';
 
 const text = 'This is a title';
 const element = <HeadingSmall>{text}</HeadingSmall>;
