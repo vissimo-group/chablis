@@ -1,0 +1,18 @@
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
+
+version: 2
+jobs:
+  test:
+    parallelism: 1
+    shell: /bin/bash --login
+    docker:
+      - image: circleci/node:8.11.3-stretch-browsers
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run lint
+      - run: npm test -- --runInBand --coverage --bail
