@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import BodyLarge from './';
+import BodyLarge from '.';
 
 const text = 'This is a text';
 const element = <BodyLarge>{text}</BodyLarge>;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Row from './';
+import Row from '.';
 
 const element = <Row><span>Subcomponent</span></Row>;
 const component = mount(element);

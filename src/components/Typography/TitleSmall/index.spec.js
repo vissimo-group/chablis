@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import TitleSmall from './';
+import TitleSmall from '.';
 
 const text = 'This is a SubTitle';
 const element = <TitleSmall>{text}</TitleSmall>;

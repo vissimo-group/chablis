@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Button from './';
+import Button from '.';
 
 const onClick = jest.fn();
 const element = <Button onClick={onClick}>Button</Button>;
