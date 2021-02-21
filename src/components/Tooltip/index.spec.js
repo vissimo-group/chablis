@@ -3,30 +3,27 @@ import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 import Tooltip from '.';
 
+import { GetPosition } from '../../Utils';
+
 const text = 'This is a tooltip';
 const element = <Tooltip text={text} />;
 const component = mount(element);
 
-const getPosition = position => component.instance().getPosition(position);
-
 describe('Tooltip', () => {
-  it('should render a tooltip', () => {
-    const tree = renderer
-      .create(element)
-      .toJSON();
-
+  it('Should render a tooltip', () => {
+    const tree = renderer.create(element).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it('should display passed text', () => {
+  it('Should display passed text', () => {
     expect(component.prop('text')).toBe(text);
   });
 
-  it('should return right positions', () => {
-    expect(getPosition()).toEqual(['right', 'top']);
-    expect(getPosition('top-start')).toEqual(['left', 'bottom']);
-    expect(getPosition('top-end')).toEqual(['right', 'bottom']);
-    expect(getPosition('bottom-start')).toEqual(['left', 'top']);
-    expect(getPosition('bottom-end')).toEqual(['right', 'top']);
+  it('Should return right positions', () => {
+    expect(GetPosition()).toEqual(['right', 'top']);
+    expect(GetPosition('top-start')).toEqual(['left', 'bottom']);
+    expect(GetPosition('top-end')).toEqual(['right', 'bottom']);
+    expect(GetPosition('bottom-start')).toEqual(['left', 'top']);
+    expect(GetPosition('bottom-end')).toEqual(['right', 'top']);
   });
 });

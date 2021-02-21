@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip should render a tooltip 1`] = `
+exports[`Tooltip Should render a tooltip 1`] = `
 <span
-  className="sc-bdVaJa ccTJJv"
+  className="sc-bdVaJa jxSjBY"
   type="default"
 >
   This is a tooltip
