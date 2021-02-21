@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomTooltip Should render a tooltip 1`] = `
+<span
+  className="sc-bwzfXH TKGxV sc-bdVaJa bbLiYb"
+  type="default"
+>
+  <img
+    alt="Escala"
+    src="https://evino-res.cloudinary.com/image/upload/v1613757080/web/assets/escala.png"
+  />
+  <p>
+    Classificação de acordo com a legislação brasileira em relação ao conteúdo de açúcar, expresso em gramas por litro de glicose (g/L).
+  </p>
+</span>
+`;

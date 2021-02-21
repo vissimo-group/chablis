@@ -1,5 +1,6 @@
 import Button from './components/Button';
 import Tooltip from './components/Tooltip';
+import CustomTooltip from './components/CustomTooltip';
 import { Container, Column, Row } from './components/Grid';
 import {
   BodyLarge,
@@ -26,4 +27,5 @@ export default {
   TitleMedium,
   TitleSmall,
   Tooltip,
+  CustomTooltip,
 };
