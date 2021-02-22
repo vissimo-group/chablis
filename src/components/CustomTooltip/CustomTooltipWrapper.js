@@ -25,6 +25,8 @@ const CustomTooltipWrapper = styled(TooltipWrapper)`
   }
 
   p {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: ${colors.DARKEST_GREY};
     font-size: ${fontSizes.EXTRASMALL};
     font-weight: ${fontWeights.REGULAR};
