@@ -8,7 +8,7 @@ const CustomTooltipWrapper = styled(TooltipWrapper)`
   max-width: 280px;
   padding: 16px 24px;
   ${({ alignY }) => alignY}: calc(100% + 15px);
-  ${({ alignX }) => alignX}: ${({ spaced }) => (spaced ? '-55px' : 'calc(50% - 30px)')};
+  ${({ alignX }) => alignX}: ${({ spaced }) => (spaced ? '-55px' : 'calc(50% - 32px)')};
 
   img {
     width: 100%;
