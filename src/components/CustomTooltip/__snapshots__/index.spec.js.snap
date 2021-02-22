@@ -7,7 +7,7 @@ exports[`CustomTooltip Should render a tooltip 1`] = `
 >
   <img
     alt="Escala"
-    src="https://evino-res.cloudinary.com/image/upload/v1613757080/web/assets/escala.png"
+    src="https://evino-res.cloudinary.com/image/upload/v1614018200/web/assets/escala.png"
   />
   <p>
     Classificação de acordo com a legislação brasileira em relação ao conteúdo de açúcar, expresso em gramas por litro de glicose (g/L).

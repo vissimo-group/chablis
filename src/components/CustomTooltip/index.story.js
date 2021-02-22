@@ -12,7 +12,7 @@ const buttonStyle = {
   position: 'relative',
 };
 
-const ImageURL = 'https://evino-res.cloudinary.com/image/upload/v1613757080/web/assets/escala.png';
+const ImageURL = 'https://evino-res.cloudinary.com/image/upload/v1614018200/web/assets/escala.png';
 
 const CustomTooltipWithImage = (
   <CustomTooltip type="default" show align="bottom-start">
