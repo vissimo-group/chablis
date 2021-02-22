@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import CustomTooltip from '.';
-import QuestionMark from '../QuestionMark';
 
 const divStyle = {
   marginTop: '30px',
@@ -31,12 +30,5 @@ storiesOf('Custom Tooltip', module).addWithInfo('Default', () => (
       Click me!
       {CustomTooltipWithImage}
     </button>
-  </div>
-)).addWithInfo('On QuestionMark component', () => (
-  <div style={divStyle}>
-    <QuestionMark>
-      <span>Saiba mais sobre</span>
-      {CustomTooltipWithImage}
-    </QuestionMark>
   </div>
 ));

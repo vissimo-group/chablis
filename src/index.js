@@ -1,7 +1,6 @@
 import Button from './components/Button';
 import Tooltip from './components/Tooltip';
 import CustomTooltip from './components/CustomTooltip';
-import QuestionMark from './components/QuestionMark';
 import { Container, Column, Row } from './components/Grid';
 
 import {
@@ -30,5 +29,4 @@ export default {
   TitleSmall,
   Tooltip,
   CustomTooltip,
-  QuestionMark,
 };
