@@ -30,6 +30,7 @@ const CustomTooltipWrapper = styled(TooltipWrapper)`
     font-weight: ${fontWeights.REGULAR};
     line-height: ${fontSizes.SMALL};
     text-align: left;
+    margin: 0;
   }
 `;
 
