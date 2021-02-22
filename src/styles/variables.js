@@ -9,7 +9,6 @@ export const colors = {
   DARK_GREY: '#808080',
   DARKEST_GREY: '#696969',
   BLACK: '#20201E',
-  GREEN: '#03a678',
 };
 
 export const sizes = {
