@@ -11,9 +11,11 @@ import {
 
 const CustomTooltipWrapper = styled(TooltipWrapper)`
   position: absolute;
-  min-width: 255px;
-  max-width: 280px;
+  min-width: unset;
+  max-width: unset;
+  width: 310px;
   padding: ${sizes.DEFAULT} 24px;
+  box-sizing: border-box;
   ${({ alignY }) => alignY}: calc(100% + 15px);
   ${({ alignX }) => alignX}: ${({ spaced }) => (spaced ? '-55px' : 'calc(50% - 32px)')};
 
