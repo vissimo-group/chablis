@@ -15,7 +15,7 @@ const buttonStyle = {
 const ImageURL = 'https://evino-res.cloudinary.com/image/upload/v1614018200/web/assets/escala.png';
 
 const CustomTooltipWithImage = (
-  <CustomTooltip type="default" show align="bottom-start">
+  <CustomTooltip type="default" show align="bottom-start" className="custom-tooltip">
     <img src={ImageURL} alt="Escala" />
     <p>
       Classificação de acordo com a legislação brasileira em relação ao
