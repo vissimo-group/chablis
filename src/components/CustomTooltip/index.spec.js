@@ -4,8 +4,15 @@ import CustomTooltip from '.';
 
 const ImageURL = 'https://evino-res.cloudinary.com/image/upload/v1614018200/web/assets/escala.png';
 
+const customTooltipProps = {
+  align: 'bottom-start',
+  className: 'custom-tooltip',
+  show: true,
+  type: 'default',
+};
+
 const element = (
-  <CustomTooltip type="default" show align="bottom-start">
+  <CustomTooltip {...customTooltipProps}>
     <img src={ImageURL} alt="Escala" />
     <p>
       Classificação de acordo com a legislação brasileira em relação ao

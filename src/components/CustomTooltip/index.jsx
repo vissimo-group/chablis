@@ -7,6 +7,7 @@ import { GetPosition } from '../../Utils';
 const CustomTooltip = ({
   align,
   children,
+  className,
   spaced,
   show,
   type,
@@ -16,6 +17,7 @@ const CustomTooltip = ({
   const CustomTooltipProps = {
     alignX: position[0],
     alignY: position[1],
+    className,
     show,
     spaced,
     type,
@@ -35,6 +37,7 @@ CustomTooltip.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  className: PropTypes.string,
   spaced: PropTypes.bool,
   show: PropTypes.bool,
   type: PropTypes.oneOf([
@@ -46,6 +49,7 @@ CustomTooltip.propTypes = {
 
 CustomTooltip.defaultProps = {
   align: 'top-end',
+  className: '',
   spaced: false,
   show: true,
   type: 'default',
