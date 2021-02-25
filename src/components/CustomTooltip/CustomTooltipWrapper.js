@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import TooltipWrapper from '../Tooltip/TooltipWrapper';
 
 import {
+  breakpoints,
   colors,
   fontSizes,
   fontWeights,
@@ -13,11 +14,23 @@ const CustomTooltipWrapper = styled(TooltipWrapper)`
   position: absolute;
   min-width: unset;
   max-width: unset;
-  width: 310px;
+  width: 260px;
   padding: ${sizes.DEFAULT} 24px;
   box-sizing: border-box;
   ${({ alignY }) => alignY}: calc(100% + 15px);
   ${({ alignX }) => alignX}: ${({ spaced }) => (spaced ? '-55px' : 'calc(50% - 32px)')};
+
+  @media screen and (min-width: 320px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 375px) {
+    width: 310px;
+  }
+
+  @media screen and (min-width: ${breakpoints.SMALL}) {
+    width: 330px;
+  }
 
   img {
     width: 100%;
