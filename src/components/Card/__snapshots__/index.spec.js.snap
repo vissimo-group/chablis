@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Should render the default card 1`] = `
+<div
+  className="sc-bdVaJa bsZmUM"
+  width="337px"
+>
+  <img
+    alt="Country"
+    className="image-country"
+    src="//res.cloudinary.com/evino/image/upload/dpr_2.0,w_32,f_auto,q_auto:best/v1/web/assets/Espanha"
+  />
+  <img
+    alt="Logo"
+    className="image-logo"
+    src="//res.cloudinary.com/evino/image/upload/v1615413100/web/assets/Cune.svg"
+  />
+  <span
+    className="sr-only"
+  >
+    Default card
+  </span>
+</div>
+`;
