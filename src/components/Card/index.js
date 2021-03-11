@@ -11,6 +11,7 @@ const Card = styled.div`
   height: 175px;
   border-radius: ${sizes.RADIUS};
   cursor: pointer;
+  padding: ${sizes.HALF};
   overflow: hidden;
   z-index: 1;
 

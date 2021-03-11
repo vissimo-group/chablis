@@ -2,23 +2,21 @@
 
 exports[`Card Should render the default card 1`] = `
 <div
-  className="sc-bdVaJa bsZmUM"
+  className="sc-bdVaJa ehmhcs"
   width="337px"
 >
   <img
     alt="Country"
     className="image-country"
-    src="//res.cloudinary.com/evino/image/upload/dpr_2.0,w_32,f_auto,q_auto:best/v1/web/assets/Espanha"
+    src="image-country"
   />
   <img
     alt="Logo"
     className="image-logo"
-    src="//res.cloudinary.com/evino/image/upload/v1615413100/web/assets/Cune.svg"
+    src="image-logo"
   />
   <span
     className="sr-only"
-  >
-    Default card
-  </span>
+  />
 </div>
 `;
