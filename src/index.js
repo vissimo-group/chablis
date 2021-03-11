@@ -1,4 +1,5 @@
 import Button from './components/Button';
+import Card from './components/Card';
 import Tooltip from './components/Tooltip';
 import CustomTooltip from './components/CustomTooltip';
 import { Container, Column, Row } from './components/Grid';
@@ -19,6 +20,7 @@ export default {
   BodyMedium,
   BodySmall,
   Button,
+  Card,
   Container,
   Column,
   HeadingLarge,
