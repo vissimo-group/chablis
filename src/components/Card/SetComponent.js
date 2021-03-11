@@ -1,8 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Card from '.';
 
-const SetComponent = (bgImage, imageLogo, imageCountry, width, accessibilityText) => (
-  <Card backgroundImage={bgImage} width={width}>
+const SetComponent = ({
+  accessibilityText,
+  bgImage,
+  imageLogo,
+  imageCountry,
+  width,
+  height,
+}) => (
+  <Card backgroundImage={bgImage} width={width} height={height}>
     {imageCountry && (
       <img
         className="image-country"
@@ -26,5 +34,23 @@ const SetComponent = (bgImage, imageLogo, imageCountry, width, accessibilityText
     )}
   </Card>
 );
+
+SetComponent.propTypes = {
+  accessibilityText: PropTypes.string,
+  bgImage: PropTypes.string,
+  imageLogo: PropTypes.string,
+  imageCountry: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
+};
+
+SetComponent.defaultProps = {
+  accessibilityText: '',
+  bgImage: '',
+  imageLogo: '',
+  imageCountry: '',
+  width: '',
+  height: '',
+};
 
 export default SetComponent;

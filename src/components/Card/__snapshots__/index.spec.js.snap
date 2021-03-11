@@ -2,7 +2,8 @@
 
 exports[`Card Should render the default card 1`] = `
 <div
-  className="sc-bdVaJa ehmhcs"
+  className="sc-bdVaJa inklDW"
+  height=""
   width="337px"
 >
   <img
@@ -17,6 +18,8 @@ exports[`Card Should render the default card 1`] = `
   />
   <span
     className="sr-only"
-  />
+  >
+    Card Default
+  </span>
 </div>
 `;
