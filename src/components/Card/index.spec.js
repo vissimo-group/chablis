@@ -91,6 +91,7 @@ describe('Card', () => {
 
     expect(component.props().backgroundImage).toEqual('');
     expect(component.props().width).toEqual('');
+    expect(component.props().height).toEqual('');
 
     expect(component.find('.image-country')).toHaveLength(0);
     expect(component.find('.image-logo')).toHaveLength(0);
