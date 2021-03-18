@@ -8,7 +8,7 @@ const Card = styled.div`
   align-items: center;
   justify-content: center;
   width: ${({ width }) => width || '100%'};
-  height: ${({ height }) => height || '175px'};;
+  height: ${({ height }) => height || '175px'};
   border-radius: ${sizes.RADIUS};
   cursor: pointer;
   padding: ${sizes.HALF};
