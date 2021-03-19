@@ -8,7 +8,7 @@ const Card = styled.div`
   align-items: center;
   justify-content: center;
   width: ${({ width }) => width || '100%'};
-  height: ${({ height }) => height || '175px'};;
+  height: ${({ height }) => height || '175px'};
   border-width: 1px;
   border-style: solid;
   border-color: ${colors.DARKEST_GREY_2};
