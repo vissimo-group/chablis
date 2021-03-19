@@ -8,6 +8,7 @@ export const colors = {
   MEDIUM_GREY: '#C0C0C0',
   DARK_GREY: '#808080',
   DARKEST_GREY: '#696969',
+  DARKEST_GREY_2: '#393939',
   BLACK: '#20201E',
 };
 
