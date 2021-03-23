@@ -5479,8 +5479,8 @@ negotiator@0.6.1:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
 nested-object-assign@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/nested-object-assign/-/nested-object-assign-1.0.2.tgz#9a84ef51b5c11298b5476d6c65b26458c9eae82b"
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/nested-object-assign/-/nested-object-assign-1.0.4.tgz#c9db56078eb6043960fdb6ba918a5122a06ccac4"
 
 nice-try@^1.0.4:
   version "1.0.5"
