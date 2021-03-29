@@ -10,7 +10,7 @@ const SetComponent = ({
   width,
   height,
 }) => (
-  <Card bgImage={bgImage} width={width} height={height}>
+  <Card bgimage={bgImage} width={width} height={height}>
     {imageCountry && (
       <img
         className="image-country"
