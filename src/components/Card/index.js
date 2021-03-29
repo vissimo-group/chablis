@@ -19,14 +19,14 @@ const Card = styled.div`
   border-radius: ${sizes.RADIUS};
   z-index: 1;
 
-  ${({ backgroundImage }) => backgroundImage && css`
-    background-image: ${`url(${backgroundImage})`};
+  ${({ bgImage }) => bgImage && css`
+    background-image: ${`url(${bgImage})`};
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   `}
 
-  ${({ backgroundImage }) => !backgroundImage && css`
+  ${({ bgImage }) => !bgImage && css`
     background-color: ${colors.LIGHTEST_GREY};
   `}
 
