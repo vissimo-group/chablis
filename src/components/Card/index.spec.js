@@ -44,7 +44,7 @@ describe('Card', () => {
     });
 
     const component = mount(element);
-    expect(component.props().backgroundImage).toEqual(false);
+    expect(component.props().bgImage).toEqual(false);
   });
 
   it('Should render a fluid component', () => {
@@ -89,7 +89,7 @@ describe('Card', () => {
 
     const component = mount(element);
 
-    expect(component.props().backgroundImage).toEqual('');
+    expect(component.props().bgImage).toEqual('');
     expect(component.props().width).toEqual('');
     expect(component.props().height).toEqual('');
 
