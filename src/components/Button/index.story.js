@@ -1,58 +1,55 @@
-/* eslint-disable */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Button from './';
-
-const action = param => {
-  alert(param);
-}
+import Button from '.';
 
 storiesOf('Button', module)
   .addWithInfo('Primary Button', () => (
-    <Button
-      onClick={action.bind(this, 'clicked')}
-    >
+    <Button primary>
       Primary Button
     </Button>
   ))
+  .addWithInfo('Primary Link Button', () => (
+    <Button primary as="a" href="#">
+      Primary Link Button
+    </Button>
+  ))
   .addWithInfo('Fluid Button', () => (
-    <Button
-      onClick={action.bind(this, 'clicked')}
-      fluid
-    >
+    <Button fluid>
       Fluid Button
     </Button>
   ))
   .addWithInfo('Thin Button', () => (
-    <Button
-      onClick={action.bind(this, 'clicked')}
-      thin
-    >
+    <Button thin>
       Thin Button
     </Button>
   ))
+  .addWithInfo('Thin Link Button', () => (
+    <Button thin as="a" href="#">
+      Thin Link Button
+    </Button>
+  ))
   .addWithInfo('Disabled Button', () => (
-    <Button
-      onClick={action.bind(this, 'clicked')}
-      disabled
-    >
+    <Button disabled>
       Disabled Button
     </Button>
   ))
+  .addWithInfo('Disabled Link Button', () => (
+    <Button primary disabled as="a" href="#">
+      Disabled Link Button
+    </Button>
+  ))
   .addWithInfo('Secondary Borderless Button', () => (
-    <Button
-      onClick={action.bind(this, 'clicked')}
-      borderless
-      secondary
-    >
+    <Button borderless secondary>
       Secondary Borderless Button
     </Button>
   ))
   .addWithInfo('Secondary Button', () => (
-    <Button
-      onClick={action.bind(this, 'clicked')}
-      secondary
-    >
+    <Button secondary>
       Secondary Button
+    </Button>
+  ))
+  .addWithInfo('Secondary Link Button', () => (
+    <Button secondary as="a" href="#">
+      Secondary Link Button
     </Button>
   ));
