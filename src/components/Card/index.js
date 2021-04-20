@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { colors, sizes } from '../../styles/variables';
+import { breakpoints, colors, sizes } from '../../styles/variables';
 
 const Card = styled.div`
   position: relative;
@@ -39,9 +39,13 @@ const Card = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .55);
+    background-color: rgba(0, 0, 0, .3);
     z-index: 1;
     transition: background-color .2s ease-out;
+
+    @media screen and (min-width: ${breakpoints.SMALL}) {
+      background-color: rgba(0, 0, 0, .55);
+    }
   }
 
   :hover,
