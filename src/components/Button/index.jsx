@@ -1,82 +1,78 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { colors, sizes, fontSizes, fontWeights } from '../../styles/variables';
 
-const ActionButton = styled.button`
+import {
+  colors,
+  sizes,
+  fontSizes,
+  fontWeights,
+} from '../../styles/variables';
+
+const Button = styled.button`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   max-width: 300px;
   width: 100%;
-  min-height: 50px;
-  background: ${colors.PRIMARY};
+  background-color: ${colors.PRIMARY};
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${colors.PRIMARY};
+  border-radius: ${sizes.RADIUS};
+  color: ${colors.WHITE};
   font-size: ${fontSizes.SMALL};
   font-weight: ${fontWeights.REGULAR};
-  color: ${colors.WHITE};
-  border: 1px solid ${colors.PRIMARY};
+  line-height: ${fontSizes.SMALL};
   outline: 0;
-  border-radius: ${sizes.RADIUS};
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  display: block;
-  transition: .3s;
+  box-sizing: border-box;
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+  transition-property: background-color, border-color, color;
 
-  ${props => !props.borderless && css`
-    &:hover {
+  ${({ borderless }) => !borderless && css`
+    :hover,
+    :focus {
       background: ${colors.PRIMARY_DARKEN};
       border-color: ${colors.PRIMARY_DARKEN};
       color: ${colors.WHITE};
     }
   `}
 
-  &:disabled {
+  ${({ disabled }) => disabled && css`
     cursor: default;
     color: ${colors.DARK_GREY};
-    background: ${colors.LIGHTEST_GREY};
+    background-color: ${colors.LIGHTEST_GREY};
     border-color: ${colors.LIGHTEST_GREY};
-  }
+  `}
 
-  ${props => props.thin && css`
+  ${({ thin }) => !thin && css`
+    min-height: 50px;
+  `}
+
+  ${({ thin }) => thin && css`
     min-height: 30px;
   `}
 
-  ${props => props.fluid && css`
+  ${({ fluid }) => fluid && css`
     max-width: ${sizes.FULL};
   `}
 
-  ${props => props.borderless && css`
-    border: 0;
+  ${({ borderless }) => borderless && css`
+    border-width: 0;
   `}
 
-  ${props => props.secondary && css`
-    background: transparent;
-    color: ${props.borderless ? colors.MEDIUM_GREY : colors.PRIMARY};
+  ${({ borderless, secondary }) => secondary && css`
+    background-color: transparent;
+    color: ${borderless ? colors.MEDIUM_GREY : colors.PRIMARY};
   `}
 
-  ${props => props.secondary && props.disabled && css`
-    background: ${colors.WHITE} !important;
+  ${({ disabled, secondary }) => secondary && disabled && css`
+    background-color: ${colors.WHITE} !important;
     border-color: ${colors.DARK_GREY} !important;
   `}
 `;
 
-export default class Button extends PureComponent {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    onClick: PropTypes.func,
-    fluid: PropTypes.bool,
-    secondary: PropTypes.bool,
-    borderless: PropTypes.bool,
-    disabled: PropTypes.bool,
-    thin: PropTypes.bool,
-  }
-
-  static defaultProps = {
-    fluid: false,
-    secondary: false,
-    disabled: false,
-    thin: false,
-  }
-
-  render() {
-    return (
-      <ActionButton {...this.props}>{this.props.children}</ActionButton>
-    );
-  }
-}
+export default Button;
