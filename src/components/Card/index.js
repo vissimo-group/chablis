@@ -15,6 +15,7 @@ const Card = styled.div`
   box-sizing: border-box;
   cursor: pointer;
   padding: ${sizes.HALF};
+  margin: 0;
   overflow: hidden;
   border-radius: ${sizes.RADIUS};
   z-index: 1;
