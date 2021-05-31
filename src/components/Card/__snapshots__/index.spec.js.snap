@@ -2,10 +2,15 @@
 
 exports[`Card Should render the default card 1`] = `
 <div
-  className="sc-bdVaJa gzDDoQ"
+  className="sc-bdVaJa cgEHQz"
   height=""
   width="337px"
 >
+  <img
+    alt="Card"
+    className="image-card"
+    src="bg-image"
+  />
   <img
     alt="Country"
     className="image-country"

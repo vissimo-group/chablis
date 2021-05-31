@@ -4,41 +4,33 @@ import Card from '.';
 
 const SetComponent = ({
   accessibilityText,
-  bgImage,
+  imageCard,
   imageLogo,
   imageCountry,
   width,
   height,
 }) => (
-  <Card bgimage={bgImage} width={width} height={height}>
+  <Card width={width} height={height}>
+    {imageCard && (
+      <img className="image-card" alt="Card" src={imageCard} />
+    )}
+
     {imageCountry && (
-      <img
-        className="image-country"
-        alt="Country"
-        src={imageCountry}
-      />
+      <img className="image-country" alt="Country" src={imageCountry} />
     )}
 
     {imageLogo && (
-      <img
-        className="image-logo"
-        alt="Logo"
-        src={imageLogo}
-      />
+      <img className="image-logo" alt="Logo" src={imageLogo} />
     )}
 
-    {accessibilityText && (
-      <span className="sr-only">
-        {accessibilityText}
-      </span>
-    )}
+    {accessibilityText && <span className="sr-only">{accessibilityText}</span>}
   </Card>
 );
 
 SetComponent.propTypes = {
   accessibilityText: PropTypes.string,
-  bgImage: PropTypes.string,
   imageLogo: PropTypes.string,
+  imageCard: PropTypes.string,
   imageCountry: PropTypes.string,
   width: PropTypes.string,
   height: PropTypes.string,
@@ -46,8 +38,8 @@ SetComponent.propTypes = {
 
 SetComponent.defaultProps = {
   accessibilityText: '',
-  bgImage: '',
   imageLogo: '',
+  imageCard: '',
   imageCountry: '',
   width: '',
   height: '',
