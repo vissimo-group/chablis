@@ -5,7 +5,7 @@ import Tag from '.';
 
 describe('Tag', () => {
   it('should render a Tag', () => {
-    const element = <Tag>Button</Tag>;
+    const element = <Tag>Tag</Tag>;
     const tree = renderer
       .create(element)
       .toJSON();
@@ -15,7 +15,7 @@ describe('Tag', () => {
 
   it('should render with specific text color', () => {
     const color = '#000';
-    const element = <Tag color={color}>Button</Tag>;
+    const element = <Tag color={color}>Tag</Tag>;
 
     const component = mount(element);
     expect(component.props().color).toEqual(color);
@@ -23,14 +23,14 @@ describe('Tag', () => {
 
   it('should render with specific background color', () => {
     const backgroundColor = '#ce2a36';
-    const element = <Tag backgroundColor={backgroundColor}>Button</Tag>;
+    const element = <Tag backgroundColor={backgroundColor}>Tag</Tag>;
 
     const component = mount(element);
     expect(component.props().backgroundColor).toEqual(backgroundColor);
   });
 
   it('should render the text uppercase', () => {
-    const element = <Tag uppercase>Button</Tag>;
+    const element = <Tag uppercase>Tag</Tag>;
     const component = mount(element);
     expect(component.props().uppercase).toEqual(true);
   });
