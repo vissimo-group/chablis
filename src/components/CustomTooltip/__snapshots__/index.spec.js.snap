@@ -2,7 +2,7 @@
 
 exports[`CustomTooltip Should render a tooltip 1`] = `
 <span
-  className="sc-bdVaJa sc-bwzfXH dcvnOi custom-tooltip"
+  className="sc-bdVaJa sc-bwzfXH feyzUf custom-tooltip"
   type="default"
 >
   <img

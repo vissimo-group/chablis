@@ -2,7 +2,7 @@
 
 exports[`Button should render a button 1`] = `
 <button
-  className="sc-bdVaJa ecMwAO"
+  className="sc-bdVaJa fAQcLL"
   onClick={[MockFunction]}
 >
   Button
