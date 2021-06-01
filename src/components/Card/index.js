@@ -57,8 +57,8 @@ const Card = styled.div`
     top: 50%;
     left: 50%;
     width: 100%;
-    max-width: 100%;
     height: auto;
+    min-height: ${({ height }) => (height ? `calc(${height} + 10px)` : '180px')};
     transform: translate3d(-50%, -50%, 0);
   }
 
