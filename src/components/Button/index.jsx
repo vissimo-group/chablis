@@ -1,11 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import {
-  colors,
-  sizes,
-  fontSizes,
-  fontWeights,
-} from '../../styles/variables';
+import { colors, sizes, fontSizes, fontWeights } from "../../styles/variables";
 
 const Button = styled.button`
   display: inline-flex;
@@ -28,51 +23,68 @@ const Button = styled.button`
   text-decoration: none;
   cursor: pointer;
   box-sizing: border-box;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-out;
   transition-property: background-color, border-color, color;
 
-  ${({ borderless }) => !borderless && css`
-    :hover,
-    :focus {
-      background: ${colors.PRIMARY_DARKEN};
-      border-color: ${colors.PRIMARY_DARKEN};
-      color: ${colors.WHITE};
-    }
-  `}
+  ${({ borderless }) =>
+    !borderless &&
+    css`
+      :hover,
+      :focus {
+        background: ${colors.PRIMARY_DARKEN};
+        border-color: ${colors.PRIMARY_DARKEN};
+        color: ${colors.WHITE};
+      }
+    `}
 
-  ${({ disabled }) => disabled && css`
-    cursor: default;
-    color: ${colors.DARK_GREY};
-    background-color: ${colors.LIGHTEST_GREY};
-    border-color: ${colors.LIGHTEST_GREY};
-  `}
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      cursor: default;
+      color: ${colors.DARK_GREY};
+      background-color: ${colors.LIGHTEST_GREY};
+      border-color: ${colors.LIGHTEST_GREY};
+    `}
 
-  ${({ thin }) => !thin && css`
-    min-height: 50px;
-  `}
+  ${({ thin }) =>
+    !thin &&
+    css`
+      min-height: 50px;
+    `}
 
-  ${({ thin }) => thin && css`
-    min-height: 30px;
-  `}
+  ${({ thin }) =>
+    thin &&
+    css`
+      min-height: 30px;
+    `}
 
-  ${({ fluid }) => fluid && css`
-    max-width: ${sizes.FULL};
-  `}
+  ${({ fluid }) =>
+    fluid &&
+    css`
+      max-width: ${sizes.FULL};
+    `}
 
-  ${({ borderless }) => borderless && css`
-    border-width: 0;
-  `}
+  ${({ borderless }) =>
+    borderless &&
+    css`
+      border-width: 0;
+    `}
 
-  ${({ borderless, secondary }) => secondary && css`
-    background-color: transparent;
-    color: ${borderless ? colors.MEDIUM_GREY : colors.PRIMARY};
-  `}
+  ${({ borderless, secondary }) =>
+    secondary &&
+    css`
+      background-color: transparent;
+      color: ${borderless ? colors.MEDIUM_GREY : colors.PRIMARY};
+    `}
 
-  ${({ disabled, secondary }) => secondary && disabled && css`
-    background-color: ${colors.WHITE} !important;
-    border-color: ${colors.DARK_GREY} !important;
-  `}
+  ${({ disabled, secondary }) =>
+    secondary &&
+    disabled &&
+    css`
+      background-color: ${colors.WHITE} !important;
+      border-color: ${colors.DARK_GREY} !important;
+    `}
 `;
 
 export default Button;
