@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar Should activate specific active tags 1`] = `
+<div
+  className="sc-htpNat hLMOoA"
+>
+  <p
+    className="sc-bxivhb hhQZZW"
+  >
+    Teste
+  </p>
+  <div
+    className="sc-bwzfXH Mxefn"
+  >
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+  </div>
+</div>
+`;
+
+exports[`ProgressBar Should render the component 1`] = `
+<div
+  className="sc-htpNat hLMOoA"
+>
+  <p
+    className="sc-bxivhb hhQZZW"
+  >
+    Teste
+  </p>
+  <div
+    className="sc-bwzfXH Mxefn"
+  >
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+    <span
+      className="sc-bdVaJa eGlyNT"
+    />
+  </div>
+</div>
+`;

@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
-
-import { sizes, zIndexes } from '../../styles/variables';
+import { sizes, zIndexes, colors } from '../../styles/variables';
 
 export const Bar = styled.span`
   display: inline-flex;
@@ -11,28 +10,27 @@ export const Bar = styled.span`
   margin-right: 0.2%;
   opacity: 0.2;
   position: relative;
-  background-color: #ad6c22;
 
   &:nth-child(1) {
-    background-color: #ffb55f;
+    background-color: ${colors.ORANGE_1};
     border-top-left-radius: ${sizes.RADIUS};
     border-bottom-left-radius: ${sizes.RADIUS};
   }
 
   &:nth-child(2) {
-    background-color: #f49a30;
+    background-color: ${colors.ORANGE_2};
   }
 
   &:nth-child(3) {
-    background-color: #f8892c;
+    background-color:  ${colors.ORANGE_3};
   }
 
   &:nth-child(4) {
-    background-color: #ec720b;
+    background-color:  ${colors.ORANGE_4};
   }
 
   &:nth-child(5) {
-    background-color: #c85f01;
+    background-color:  ${colors.ORANGE_5};
     border-top-right-radius: ${sizes.RADIUS};
     border-bottom-right-radius: ${sizes.RADIUS};
   }

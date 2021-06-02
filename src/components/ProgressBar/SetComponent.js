@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { Bar, ProgressBarStyled, ProgressBarContainer } from '.';
 import BodySmall from '../Typography/BodySmall';
 
-const ProgressBar = ({ active, label, bars }) => (
+const ProgressBar = ({ active, label }) => (
   <ProgressBarContainer>
     {label && <BodySmall>{label}</BodySmall>}
     <ProgressBarStyled active={active}>
-      {Array(bars || 5).fill(<Bar active={active} />)}
+      {Array.from(Array(5), (_, i) => <Bar key={i} active={active} />)}
     </ProgressBarStyled>
   </ProgressBarContainer>
 );
@@ -15,7 +15,6 @@ const ProgressBar = ({ active, label, bars }) => (
 ProgressBar.propTypes = {
   active: PropTypes.number,
   label: PropTypes.string,
-  bars: PropTypes.number,
 };
 
 export default ProgressBar;

@@ -10,6 +10,11 @@ export const colors = {
   DARKEST_GREY: '#696969',
   DARKEST_GREY_2: '#393939',
   BLACK: '#20201E',
+  ORANGE_1: '#FFB55F',
+  ORANGE_2: '#F49A30',
+  ORANGE_3: '#F8892C',
+  ORANGE_4: '#EC720B',
+  ORANGE_5: '#C85F01',
 };
 
 export const sizes = {
