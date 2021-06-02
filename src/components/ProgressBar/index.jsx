@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import { sizes, zIndexes } from '../../styles/variables';
+
 export const Bar = styled.span`
   display: inline-flex;
   align-items: center;
@@ -13,8 +15,8 @@ export const Bar = styled.span`
 
   &:nth-child(1) {
     background-color: #ffb55f;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: ${sizes.RADIUS};
+    border-bottom-left-radius: ${sizes.RADIUS};
   }
 
   &:nth-child(2) {
@@ -31,8 +33,8 @@ export const Bar = styled.span`
 
   &:nth-child(5) {
     background-color: #c85f01;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: ${sizes.RADIUS};
+    border-bottom-right-radius: ${sizes.RADIUS};
   }
 
   &:nth-child(-n+${({ active }) => active}) {
@@ -56,7 +58,7 @@ export const ProgressBarStyled = styled.div`
       border: 3px solid #ec720b;
       position: absolute;
       right: -10px;
-      z-index: 3;
+      z-index: ${zIndexes.STRATOSPHERE};
     }
   }
 
@@ -72,7 +74,7 @@ export const ProgressBarStyled = styled.div`
         border: 3px solid #ec720b;
         position: absolute;
         left: 0px;
-        z-index: 3;
+        z-index: ${zIndexes.STRATOSPHERE};
       }
     }
   `}`;

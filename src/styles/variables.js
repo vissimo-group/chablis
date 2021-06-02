@@ -43,3 +43,12 @@ export const fontWeights = {
   REGULAR: '400',
   BOLD: '700',
 };
+
+export const zIndexes = {
+  HELL: -1,
+  GROUND: 1,
+  SKY: 2,
+  STRATOSPHERE: 3,
+  MILKAWAY: 4,
+  UNIVERSE: 5,
+};

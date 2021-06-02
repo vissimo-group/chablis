@@ -7,7 +7,7 @@ const ProgressBar = ({ active, label, bars }) => (
   <ProgressBarContainer>
     {label && <BodySmall>{label}</BodySmall>}
     <ProgressBarStyled active={active}>
-      {Array(bars).fill(<Bar active={active} />)}
+      {Array(bars || 5).fill(<Bar active={active} />)}
     </ProgressBarStyled>
   </ProgressBarContainer>
 );
