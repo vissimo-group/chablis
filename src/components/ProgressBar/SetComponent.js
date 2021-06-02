@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Bar, ProgressBarStyled, ProgressBarContainer } from '.';
 import BodySmall from '../Typography/BodySmall';
+import { ProgressBarContainer, ProgressBarStyled } from '.';
+import Bar from './Bar';
 
 const ProgressBar = ({ active, label }) => (
   <ProgressBarContainer>
