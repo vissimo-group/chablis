@@ -12,9 +12,9 @@ export const ProgressBarStyled = styled.div`
       display: block;
       width: 10px;
       height: 10px;
-      background-color: #fff;
+      background-color: ${colors.WHITE};
       border-radius: 50%;
-      border: 3px solid #ec720b;
+      border: 3px solid ${colors.ORANGE_4};
       position: absolute;
       right: -10px;
       z-index: ${zIndexes.STRATOSPHERE};
@@ -28,7 +28,7 @@ export const ProgressBarStyled = styled.div`
         display: block;
         width: 10px;
         height: 10px;
-        background-color: #fff;
+        background-color: ${colors.WHITE};
         border-radius: 50%;
         border: 3px solid ${colors.ORANGE_4};
         position: absolute;
