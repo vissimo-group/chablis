@@ -1,23 +1,24 @@
-export const colors = {
-  PRIMARY: '#03A678',
-  PRIMARY_DARKEN: '#0D7557',
-  SECONDARY: '#CE2A36',
-  WHITE: '#FFFFFF',
-  LIGHTEST_GREY: '#DCDCDC',
-  LIGHT_GREY: '#D3D3D3',
-  MEDIUM_GREY: '#C0C0C0',
+const colors = {
+  PRIMARY: '#03a678',
+  PRIMARY_DARKEN: '#0d7557',
+  SECONDARY: '#ce2a36',
+  WHITE: '#fff',
+  LIGHTEST_GREY: '#dcdcdc',
+  LIGHT_GREY: '#d3d3d3',
+  MEDIUM_GREY: '#c0c0c0',
   DARK_GREY: '#808080',
   DARKEST_GREY: '#696969',
   DARKEST_GREY_2: '#393939',
-  BLACK: '#20201E',
   ORANGE_1: '#FFB55F',
   ORANGE_2: '#F49A30',
   ORANGE_3: '#F8892C',
   ORANGE_4: '#EC720B',
   ORANGE_5: '#C85F01',
+  BLACK: '#20201e',
+  DEFAULT_BLACK: '#000',
 };
 
-export const sizes = {
+const sizes = {
   DEFAULT: '16px',
   LARGE: '32px',
   HALF: '8px',
@@ -25,14 +26,14 @@ export const sizes = {
   FULL: '100%',
 };
 
-export const breakpoints = {
+const breakpoints = {
   SMALL: '768px',
   NORMAL: '1024px',
   BIG: '1280px',
   LARGE: '1440px',
 };
 
-export const fontSizes = {
+const fontSizes = {
   HUGE1: '48px',
   HUGE2: '36px',
   LARGE: '32px',
@@ -43,9 +44,11 @@ export const fontSizes = {
   TINY: '10px',
 };
 
-export const fontWeights = {
+const fontWeights = {
   LIGHT: '300',
   REGULAR: '400',
+  MEDIUM: '500',
+  SEMIBOLD: '600',
   BOLD: '700',
 };
 
@@ -56,4 +59,17 @@ export const zIndexes = {
   STRATOSPHERE: 3,
   MILKAWAY: 4,
   UNIVERSE: 5,
+};
+
+const fonts = {
+  DEFAULT: 'Montserrat',
+};
+
+export {
+  breakpoints,
+  colors,
+  fonts,
+  fontSizes,
+  fontWeights,
+  sizes,
 };

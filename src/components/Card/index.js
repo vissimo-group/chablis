@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { breakpoints, colors, sizes } from '../../styles/variables';
 
@@ -9,6 +9,7 @@ const Card = styled.div`
   justify-content: center;
   width: ${({ width }) => width || '100%'};
   height: ${({ height }) => height || '175px'};
+  background-color: ${colors.LIGHTEST_GREY};
   border-width: 1px;
   border-style: solid;
   border-color: ${colors.DARKEST_GREY_2};
@@ -19,17 +20,7 @@ const Card = styled.div`
   overflow: hidden;
   border-radius: ${sizes.RADIUS};
   z-index: 1;
-
-  ${({ bgimage }) => bgimage && css`
-    background-image: ${`url(${bgimage})`};
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  `}
-
-  ${({ bgimage }) => !bgimage && css`
-    background-color: ${colors.LIGHTEST_GREY};
-  `}
+  object-fit: fill;
 
   ::before {
     content: '';
@@ -56,13 +47,27 @@ const Card = styled.div`
     }
   }
 
+  .image-card,
+  .image-country,
+  .sr-only {
+    position: absolute;
+  }
+
+  .image-card {
+    top: 50%;
+    left: 50%;
+    width: calc(100% + 10px);
+    height: auto;
+    min-height: ${({ height }) => (height ? `calc(${height} + 10px)` : '180px')};
+    transform: translate3d(-50%, -50%, 0);
+  }
+
   .image-country,
   .image-logo {
     z-index: 2;
   }
 
   .image-country {
-    position: absolute;
     top: ${sizes.HALF};
     right: ${sizes.HALF};
     width: ${sizes.DEFAULT};
@@ -74,7 +79,6 @@ const Card = styled.div`
   }
 
   .sr-only {
-    position: absolute;
     width: 0;
     height: 0;
     overflow: hidden;
