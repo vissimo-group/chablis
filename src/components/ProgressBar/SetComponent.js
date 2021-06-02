@@ -1,26 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  ProgressBar, Bar1, Bar2, Bar3, Bar4, Bar5,
-} from '.';
+import { Bar, ProgressBarStyled } from '.';
 import BodySmall from '../Typography/BodySmall';
 
-const SetProgressBar = ({ active, label }) => (
+const ProgressBar = ({ active, label, bars }) => (
   <div>
     {label && <BodySmall>{label}</BodySmall>}
-    <ProgressBar active={active}>
-      <Bar1 />
-      <Bar2 />
-      <Bar3 />
-      <Bar4 />
-      <Bar5 />
-    </ProgressBar>
+    <ProgressBarStyled active={active}>
+      {Array(bars).fill(<Bar active={active} />)}
+    </ProgressBarStyled>
   </div>
 );
 
-SetProgressBar.propTypes = {
-  active: PropTypes.string,
+ProgressBar.propTypes = {
+  active: PropTypes.number,
   label: PropTypes.string,
+  bars: PropTypes.number,
 };
 
-export default SetProgressBar;
+export default ProgressBar;

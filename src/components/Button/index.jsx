@@ -1,6 +1,8 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
-import { colors, sizes, fontSizes, fontWeights } from "../../styles/variables";
+import {
+  colors, sizes, fontSizes, fontWeights,
+} from '../../styles/variables';
 
 const Button = styled.button`
   display: inline-flex;
@@ -27,9 +29,8 @@ const Button = styled.button`
   transition-timing-function: ease-out;
   transition-property: background-color, border-color, color;
 
-  ${({ borderless }) =>
-    !borderless &&
-    css`
+  ${({ borderless }) => !borderless
+    && css`
       :hover,
       :focus {
         background: ${colors.PRIMARY_DARKEN};
@@ -38,50 +39,43 @@ const Button = styled.button`
       }
     `}
 
-  ${({ disabled }) =>
-    disabled &&
-    css`
+  ${({ disabled }) => disabled
+    && css`
       cursor: default;
       color: ${colors.DARK_GREY};
       background-color: ${colors.LIGHTEST_GREY};
       border-color: ${colors.LIGHTEST_GREY};
     `}
 
-  ${({ thin }) =>
-    !thin &&
-    css`
+  ${({ thin }) => !thin
+    && css`
       min-height: 50px;
     `}
 
-  ${({ thin }) =>
-    thin &&
-    css`
+  ${({ thin }) => thin
+    && css`
       min-height: 30px;
     `}
 
-  ${({ fluid }) =>
-    fluid &&
-    css`
+  ${({ fluid }) => fluid
+    && css`
       max-width: ${sizes.FULL};
     `}
 
-  ${({ borderless }) =>
-    borderless &&
-    css`
+  ${({ borderless }) => borderless
+    && css`
       border-width: 0;
     `}
 
-  ${({ borderless, secondary }) =>
-    secondary &&
-    css`
+  ${({ borderless, secondary }) => secondary
+    && css`
       background-color: transparent;
       color: ${borderless ? colors.MEDIUM_GREY : colors.PRIMARY};
     `}
 
-  ${({ disabled, secondary }) =>
-    secondary &&
-    disabled &&
-    css`
+  ${({ disabled, secondary }) => secondary
+    && disabled
+    && css`
       background-color: ${colors.WHITE} !important;
       border-color: ${colors.DARK_GREY} !important;
     `}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import SetProgressBar from './SetComponent';
+import ProgressBar from './SetComponent';
 
 storiesOf('ProgressBar', module).addWithInfo('ProgressBar', () => (
-  <SetProgressBar active="3" label="Doçura" />
+  <ProgressBar active={3} bars={5} label="Doçura" />
 ));
