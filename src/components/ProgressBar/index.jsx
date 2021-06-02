@@ -1,15 +1,15 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Bar = styled.li`
+export const Bar = styled.span`
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 6px;
-  margin-right: 0.1%;
+  margin-right: 0.2%;
   opacity: 0.2;
   position: relative;
-  background-color: red;
+  background-color: #ad6c22;
 
   &:nth-child(1) {
     background-color: #ffb55f;
@@ -40,14 +40,15 @@ export const Bar = styled.li`
   }
 `;
 
-export const ProgressBarStyled = styled.ul`
+export const ProgressBarStyled = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
 
-  & li:nth-child(${props => props.active}) {
+  & span:nth-child(${({ active }) => active}) {
     &:after {
       content: "";
-      display: inline-block;
+      display: block;
       width: 10px;
       height: 10px;
       background-color: #fff;
@@ -58,4 +59,29 @@ export const ProgressBarStyled = styled.ul`
       z-index: 3;
     }
   }
-  `;
+
+  ${({ active }) => active === 0 && css`
+    & span:first-child {
+      &:after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 3px solid #ec720b;
+        position: absolute;
+        left: 0px;
+        z-index: 3;
+      }
+    }
+  `}`;
+
+export const ProgressBarContainer = styled.div`
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-right: 10px;
+  }
+`;
