@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Price should render a price 1`] = `
+<p
+  className="sc-bdVaJa wKZyb"
+>
+  R$559
+  <small>
+    ,90
+  </small>
+</p>
+`;
