@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { colors, zIndexes } from '../../styles/variables';
+import { colors, zIndexes } from '../../../styles/variables';
 
-export const ProgressBarStyled = styled.div`
+const ProgressBarStyled = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -38,11 +38,4 @@ export const ProgressBarStyled = styled.div`
     }
   `}`;
 
-export const ProgressBarContainer = styled.div`
-  display: flex;
-  align-items: center;
-
-  p {
-    margin-right: 10px;
-  }
-`;
+export default ProgressBarStyled;

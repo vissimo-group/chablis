@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProgressBarContainer = styled.div`
+const ProgressBarContainer = styled.div`
   display: flex;
   align-items: center;
 
