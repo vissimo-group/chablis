@@ -2,30 +2,30 @@
 
 exports[`ProgressBar Should activate specific active tags 1`] = `
 <div
-  className="sc-htpNat hLMOoA"
+  className="sc-htoDjs iKQJTT"
 >
   <p
-    className="sc-bdVaJa dFpKdA"
+    className="sc-htpNat hKYTRr"
   >
     Teste
   </p>
   <div
-    className="sc-bwzfXH gjFisb"
+    className="sc-dnqmqq eDglVB"
   >
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
   </div>
 </div>
@@ -33,30 +33,30 @@ exports[`ProgressBar Should activate specific active tags 1`] = `
 
 exports[`ProgressBar Should render the component 1`] = `
 <div
-  className="sc-htpNat hLMOoA"
+  className="sc-htoDjs iKQJTT"
 >
   <p
-    className="sc-bdVaJa dFpKdA"
+    className="sc-htpNat hKYTRr"
   >
     Teste
   </p>
   <div
-    className="sc-bwzfXH gjFisb"
+    className="sc-dnqmqq eDglVB"
   >
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
     <span
-      className="sc-bxivhb hqcenp"
+      className="sc-iwsKbI gAMoBo"
     />
   </div>
 </div>

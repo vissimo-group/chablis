@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import ProgressBar from './SetComponent';
+import ProgressBar from '.';
 
 storiesOf('ProgressBar', module)
   .addWithInfo('ProgressBar with Fruit', () => (
