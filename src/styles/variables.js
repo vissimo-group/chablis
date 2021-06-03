@@ -9,6 +9,11 @@ const colors = {
   DARK_GREY: '#808080',
   DARKEST_GREY: '#696969',
   DARKEST_GREY_2: '#393939',
+  ORANGE_1: '#FFB55F',
+  ORANGE_2: '#F49A30',
+  ORANGE_3: '#F8892C',
+  ORANGE_4: '#EC720B',
+  ORANGE_5: '#C85F01',
   BLACK: '#20201e',
   DEFAULT_BLACK: '#000',
 };
@@ -45,6 +50,15 @@ const fontWeights = {
   MEDIUM: '500',
   SEMIBOLD: '600',
   BOLD: '700',
+};
+
+export const zIndexes = {
+  HELL: -1,
+  GROUND: 1,
+  SKY: 2,
+  STRATOSPHERE: 3,
+  MILKAWAY: 4,
+  UNIVERSE: 5,
 };
 
 const fonts = {
