@@ -7,9 +7,13 @@ const Bar = styled.span`
   justify-content: center;
   width: 100%;
   height: 6px;
-  margin-right: 0.2%;
+  margin-right: 0.6%;
   opacity: 0.2;
   position: relative;
+
+  @media(min-width: 769px) {
+    margin-right: 0.2%;
+  }
 
   :nth-child(1) {
     background-color: ${colors.ORANGE_1};
