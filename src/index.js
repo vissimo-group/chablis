@@ -5,6 +5,7 @@ import Tooltip from './components/Tooltip';
 import CustomTooltip from './components/CustomTooltip';
 import { Container, Column, Row } from './components/Grid';
 import ProgressBar from './components/ProgressBar';
+import Price from './components/Price';
 
 import {
   BodyLarge,
@@ -35,4 +36,5 @@ export default {
   CustomTooltip,
   Tag,
   ProgressBar,
+  Price,
 };
