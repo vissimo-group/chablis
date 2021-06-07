@@ -10,8 +10,8 @@ const ProgressBarStyled = styled.div`
     &:after {
       content: "";
       display: block;
-      width: 10px;
-      height: 10px;
+      width: 16px;
+      height: 16px;
       background-color: ${colors.WHITE};
       border-radius: 50%;
       border: 3px solid ${colors.ORANGE_4};
@@ -26,8 +26,8 @@ const ProgressBarStyled = styled.div`
       &:after {
         content: '';
         display: block;
-        width: 10px;
-        height: 10px;
+        width: 16px;
+        height: 16px;
         background-color: ${colors.WHITE};
         border-radius: 50%;
         border: 3px solid ${colors.ORANGE_4};
