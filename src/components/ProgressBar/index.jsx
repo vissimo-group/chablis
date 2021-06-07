@@ -7,8 +7,8 @@ import ProgressBarStyled from './ProgressBarStyled';
 import Bar from './Bar';
 
 
-const ProgressBar = ({ active, label }) => (
-  <ProgressBarContainer>
+const ProgressBar = ({ active, label, labelWidth }) => (
+  <ProgressBarContainer labelWidth={labelWidth}>
     {label && <BodySmall>{label}</BodySmall>}
     <ProgressBarStyled active={active}>
       {Array.from(Array(5), (_, i) => <Bar key={i} active={active} />)}
@@ -19,6 +19,7 @@ const ProgressBar = ({ active, label }) => (
 ProgressBar.propTypes = {
   active: PropTypes.number,
   label: PropTypes.string,
+  labelWidth: PropTypes.string,
 };
 
 export default ProgressBar;

@@ -5,7 +5,9 @@ const ProgressBarContainer = styled.div`
   align-items: center;
 
   p {
+    font-size: 14px;
     margin-right: 10px;
+    width: ${({ labelWidth }) => labelWidth || '60px'}
   }
 `;
 
