@@ -4,7 +4,7 @@ import ProgressBar from '.';
 
 storiesOf('ProgressBar', module)
   .addWithInfo('ProgressBar with Fruit', () => (
-    <ProgressBar active={2} label="Fruta" />
+    <ProgressBar active={0} label="Fruta" />
   )).addWithInfo('ProgressBar with Sugar', () => (
     <ProgressBar active={1} label="Açúcar" />
   )).addWithInfo('ProgressBar with no label', () => (

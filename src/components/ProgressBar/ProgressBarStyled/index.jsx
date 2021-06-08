@@ -23,6 +23,7 @@ const ProgressBarStyled = styled.div`
 
   ${({ active }) => active === 0 && css`
     span:first-child {
+      background-color: ${colors.ORANGE_1}30;
       &:after {
         content: '';
         display: block;
