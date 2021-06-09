@@ -8,7 +8,6 @@ const Bar = styled.span`
   width: 100%;
   height: 6px;
   margin-right: 0.6%;
-  opacity: 0.2;
   position: relative;
 
   @media(min-width: 769px) {
@@ -23,20 +22,24 @@ const Bar = styled.span`
 
   :nth-child(2) {
     background-color: ${colors.ORANGE_2};
+    opacity: 0.2;
   }
 
   :nth-child(3) {
     background-color:  ${colors.ORANGE_3};
+    opacity: 0.2;
   }
 
   :nth-child(4) {
     background-color:  ${colors.ORANGE_4};
+    opacity: 0.2;
   }
 
   :nth-child(5) {
     background-color:  ${colors.ORANGE_5};
     border-top-right-radius: ${sizes.RADIUS};
     border-bottom-right-radius: ${sizes.RADIUS};
+    opacity: 0.2;
   }
 
   :nth-child(-n+${({ active }) => active}) {
