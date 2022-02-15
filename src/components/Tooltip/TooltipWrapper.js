@@ -30,15 +30,15 @@ const TooltipWrapper = styled.span`
   `}
 
   ${({ type }) => type === 'success' && css`
-    background-color: ${colors.PRIMARY};
+    background-color: ${colors.primary.base};
 
     ::after {
-      border-color: ${colors.PRIMARY};
+      border-color: ${colors.primary.base};
     }
   `}
 
   ${({ type }) => type === 'danger' && css`
-    background-color: ${colors.SECONDARY};
+    background-color: ${colors.secondary.base};
   `}
 
   ::after {
@@ -57,11 +57,11 @@ const TooltipWrapper = styled.span`
     `}
 
     ${({ type }) => type === 'success' && css`
-      border-color: ${colors.PRIMARY};
+      border-color: ${colors.primary.base};
     `}
 
     ${({ type }) => type === 'danger' && css`
-      border-color: ${colors.SECONDARY};
+      border-color: ${colors.secondary.base};
     `}
 
     ${({ type }) => type === 'default' && css`

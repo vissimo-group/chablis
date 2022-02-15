@@ -6,7 +6,7 @@ import { Column, Row, Container } from './';
 
 const style = {
   width: sizes.FULL,
-  background: colors.PRIMARY,
+  background: colors.primary.base,
   color: colors.WHITE,
   padding: `${sizes.DEFAULT} 0`,
   textAlign: 'center',
@@ -30,7 +30,7 @@ const legendBlockStyle = {
   display: 'inline-block',
   width: sizes.DEFAULT,
   height: sizes.DEFAULT,
-  background: colors.PRIMARY,
+  background: colors.primary.base,
   marginRight: sizes.HALF,
 };
 

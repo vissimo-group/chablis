@@ -14,7 +14,7 @@ const ProgressBarStyled = styled.div`
       height: 16px;
       background-color: ${colors.WHITE};
       border-radius: 50%;
-      border: 3px solid ${colors.ORANGE_4};
+      border: 3px solid ${colors.orange_4};
       position: absolute;
       right: -10px;
       z-index: ${zIndexes.STRATOSPHERE};
@@ -23,7 +23,7 @@ const ProgressBarStyled = styled.div`
 
   ${({ active }) => active === 0 && css`
     span:first-child {
-      background-color: ${colors.ORANGE_1}30;
+      background-color: ${colors.orange_1}30;
       &:after {
         content: '';
         display: block;
@@ -31,7 +31,7 @@ const ProgressBarStyled = styled.div`
         height: 16px;
         background-color: ${colors.WHITE};
         border-radius: 50%;
-        border: 3px solid ${colors.ORANGE_4};
+        border: 3px solid ${colors.orange_4};
         position: absolute;
         left: 0;
         z-index: ${zIndexes.STRATOSPHERE};

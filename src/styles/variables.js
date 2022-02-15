@@ -1,7 +1,41 @@
 const colors = {
-  PRIMARY: '#03a678',
-  PRIMARY_DARKEN: '#0d7557',
-  SECONDARY: '#ce2a36',
+  primary: {
+    base: '#03a678',
+    primary_20: '#088A66',
+    primary_40: '#0D6F53',
+    primary_60: '#125341',
+  },
+
+  secondary: {
+    base: '#ce2a36',
+    secondary_20: '#AA2731',
+    secondary_40: '#87242C',
+    secondary_60: '#632226',
+  },
+
+  tertiary: {
+    base: '#FF9A22',
+    tertiary_20: '#FFB966',
+    tertiary_40: '#FFCA8C',
+    tertiary_60: '#FFDCB3',
+  },
+
+  orange_1: '#FFB55F',
+  orange_2: '#F49A30',
+  orange_3: '#F8892C',
+  orange_4: '#EC720B',
+  orange_5: '#C85F01',
+
+  neutral_100: '#1C1C1C',
+  neutral_200: '#585757',
+  neutral_300: '#969696',
+  neutral_400: '#E7E7E7',
+
+  info: '#2798E9',
+  success: '#03CE61',
+  warning: '#F5AA18',
+  error: '#F45F5F',
+
   WHITE: '#fff',
   LIGHTEST_GREY: '#dcdcdc',
   LIGHT_GREY: '#d3d3d3',
@@ -9,11 +43,6 @@ const colors = {
   DARK_GREY: '#808080',
   DARKEST_GREY: '#696969',
   DARKEST_GREY_2: '#393939',
-  ORANGE_1: '#FFB55F',
-  ORANGE_2: '#F49A30',
-  ORANGE_3: '#F8892C',
-  ORANGE_4: '#EC720B',
-  ORANGE_5: '#C85F01',
   BLACK: '#20201e',
   DEFAULT_BLACK: '#000',
 };

@@ -10,10 +10,10 @@ const Button = styled.button`
   justify-content: center;
   max-width: 300px;
   width: 100%;
-  background-color: ${colors.PRIMARY};
+  background-color: ${colors.primary.base};
   border-width: 1px;
   border-style: solid;
-  border-color: ${colors.PRIMARY};
+  border-color: ${colors.primary.base};
   border-radius: ${sizes.RADIUS};
   color: ${colors.WHITE};
   font-size: ${fontSizes.SMALL};
@@ -33,8 +33,8 @@ const Button = styled.button`
     && css`
       :hover,
       :focus {
-        background: ${colors.PRIMARY_DARKEN};
-        border-color: ${colors.PRIMARY_DARKEN};
+        background: ${colors.primary.primary_20};
+        border-color: ${colors.primary.primary_20};
         color: ${colors.WHITE};
       }
     `}
@@ -70,7 +70,7 @@ const Button = styled.button`
   ${({ borderless, secondary }) => secondary
     && css`
       background-color: transparent;
-      color: ${borderless ? colors.MEDIUM_GREY : colors.PRIMARY};
+      color: ${borderless ? colors.MEDIUM_GREY : colors.primary.base};
     `}
 
   ${({ disabled, secondary }) => secondary
