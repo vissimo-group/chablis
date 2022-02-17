@@ -15,7 +15,7 @@ const Button = styled.button`
   border-style: solid;
   border-color: ${colors.primary.base};
   border-radius: ${sizes.RADIUS};
-  color: ${colors.WHITE};
+  color: ${colors.standard.white};
   font-size: ${fontSizes.SMALL};
   font-weight: ${fontWeights.REGULAR};
   line-height: ${fontSizes.SMALL};
@@ -35,16 +35,16 @@ const Button = styled.button`
       :focus {
         background: ${colors.primary.primary_20};
         border-color: ${colors.primary.primary_20};
-        color: ${colors.WHITE};
+        color: ${colors.standard.white};
       }
     `}
 
   ${({ disabled }) => disabled
     && css`
       cursor: default;
-      color: ${colors.DARK_GREY};
-      background-color: ${colors.LIGHTEST_GREY};
-      border-color: ${colors.LIGHTEST_GREY};
+      color: ${colors.standard.dark_grey};
+      background-color: ${colors.standard.lightest_grey};
+      border-color: ${colors.standard.lightest_grey};
     `}
 
   ${({ thin }) => !thin
@@ -70,14 +70,14 @@ const Button = styled.button`
   ${({ borderless, secondary }) => secondary
     && css`
       background-color: transparent;
-      color: ${borderless ? colors.MEDIUM_GREY : colors.primary.base};
+      color: ${borderless ? colors.standard.medium_grey : colors.primary.base};
     `}
 
   ${({ disabled, secondary }) => secondary
     && disabled
     && css`
-      background-color: ${colors.WHITE} !important;
-      border-color: ${colors.DARK_GREY} !important;
+      background-color: ${colors.standard.white} !important;
+      border-color: ${colors.standard.medium_grey} !important;
     `}
 `;
 

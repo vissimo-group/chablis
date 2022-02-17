@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { fontSizes, fontWeights, sizes, colors } from '../../../styles/variables';
+import {
+  fontSizes, fontWeights, sizes, colors,
+} from '../../../styles/variables';
 
 const TitleComponent = styled.h2`
   font-size: ${fontSizes.HUGE2};
@@ -10,7 +12,7 @@ const TitleComponent = styled.h2`
   text-align: center;
   display: block;
   margin: 0;
-  color: ${colors.BLACK};
+  color: ${colors.neutrals.neutral_100};
 `;
 
 export default class HeadingLarge extends PureComponent {

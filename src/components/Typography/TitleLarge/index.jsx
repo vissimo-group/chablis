@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { fontSizes, fontWeights, sizes, colors } from '../../../styles/variables';
+import {
+  fontSizes, fontWeights, sizes, colors,
+} from '../../../styles/variables';
 
 const SubTitleComponent = styled.h3`
   font-size: ${fontSizes.BIG};
@@ -9,7 +11,7 @@ const SubTitleComponent = styled.h3`
   padding: ${sizes.LARGE} 0;
   margin: 0;
   display: block;
-  color: ${colors.BLACK};
+  color: ${colors.neutrals.neutral_100};
 `;
 
 export default class TitleLarge extends PureComponent {

@@ -7,14 +7,14 @@ import { Column, Row, Container } from './';
 const style = {
   width: sizes.FULL,
   background: colors.primary.base,
-  color: colors.WHITE,
+  color: colors.standard.white,
   padding: `${sizes.DEFAULT} 0`,
   textAlign: 'center',
   borderRadius: sizes.RADIUS,
 };
 
 const containerStyle = {
-  background: colors.LIGHT_GREY,
+  background: colors.standard.light_grey,
   padding: `${sizes.DEFAULT} 0`,
 };
 

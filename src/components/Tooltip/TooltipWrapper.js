@@ -13,7 +13,7 @@ const TooltipWrapper = styled.span`
   font-size: ${fontSizes.SMALL};
   font-weight: ${fontWeights.LIGHT};
   padding: ${sizes.HALF} ${sizes.DEFAULT};
-  color: ${colors.WHITE};
+  color: ${colors.standard.white};
   border-radius: ${sizes.RADIUS};
   position: absolute;
   min-width: 255px;
@@ -25,8 +25,8 @@ const TooltipWrapper = styled.span`
   ${({ alignX }) => alignX}: ${({ spaced }) => (spaced ? '-55px' : '5px')};
 
   ${({ type }) => type === 'default' && css`
-    background-color: ${colors.LIGHTEST_GREY}};
-    color: ${colors.DARK_GREY};
+    background-color: ${colors.standard.lightest_grey};
+    color: ${colors.standard.dark_grey};
   `}
 
   ${({ type }) => type === 'success' && css`

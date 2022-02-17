@@ -21,7 +21,7 @@ const Price = styled.p`
   -moz-osx-font-smoothing: grayscale;
 
   ${({ old, color }) => old && !color && css`
-    color: ${colors.MEDIUM_GREY_2};
+    color: ${colors.standard.medium_grey};
   `}
 
   ${({ old, color }) => old && color && css`
@@ -29,7 +29,7 @@ const Price = styled.p`
   `}
 
   ${({ old, color }) => !old && color && css`
-    color: ${color || colors.DEFAULT_BLACK};
+    color: ${color || colors.standard.default_black};
   `}
 
   ${({ old }) => old && css`

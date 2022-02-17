@@ -7,7 +7,7 @@ const ParagraphComponent = styled.p`
   font-size: ${fontSizes.EXTRASMALL};
   font-weight: ${fontWeights.REGULAR};
   line-height: normal;
-  color: ${colors.DARKEST_GREY};
+  color: ${colors.standard.darkest_grey};
   margin: 0;
 `;
 

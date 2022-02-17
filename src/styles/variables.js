@@ -20,31 +20,41 @@ const colors = {
     tertiary_60: '#FFDCB3',
   },
 
-  orange_1: '#FFB55F',
-  orange_2: '#F49A30',
-  orange_3: '#F8892C',
-  orange_4: '#EC720B',
-  orange_5: '#C85F01',
+  feedback: {
+    info: '#2798E9',
+    success: '#03CE61',
+    warning: '#F5AA18',
+    error: '#F45F5F',
+  },
 
-  neutral_100: '#1C1C1C',
-  neutral_200: '#585757',
-  neutral_300: '#969696',
-  neutral_400: '#E7E7E7',
+  neutrals: {
+    neutral_100: '#1C1C1C',
+    neutral_200: '#585757',
+    neutral_300: '#969696',
+    neutral_400: '#E7E7E7',
+  },
 
-  info: '#2798E9',
-  success: '#03CE61',
-  warning: '#F5AA18',
-  error: '#F45F5F',
+  background: {
+    primary: '#FFFFFF',
+    secondary: '#F7F7F7',
+  },
 
-  WHITE: '#fff',
-  LIGHTEST_GREY: '#dcdcdc',
-  LIGHT_GREY: '#d3d3d3',
-  MEDIUM_GREY: '#c0c0c0',
-  DARK_GREY: '#808080',
-  DARKEST_GREY: '#696969',
-  DARKEST_GREY_2: '#393939',
-  BLACK: '#20201e',
-  DEFAULT_BLACK: '#000',
+  standard: {
+    orange_1: '#FFB55F',
+    orange_2: '#F49A30',
+    orange_3: '#F8892C',
+    orange_4: '#EC720B',
+    orange_5: '#C85F01',
+    white: '#fff',
+    lightest_grey: '#dcdcdc',
+    light_grey: '#d3d3d3',
+    medium_grey: '#c0c0c0',
+    dark_grey: '#808080',
+    darkest_grey: '#696969',
+    darkest_grey_2: '#393939',
+    black: '#20201e',
+    default_black: '#000',
+  },
 };
 
 const sizes = {
