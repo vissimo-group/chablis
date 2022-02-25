@@ -1,21 +1,60 @@
 const colors = {
-  PRIMARY: '#03a678',
-  PRIMARY_DARKEN: '#0d7557',
-  SECONDARY: '#ce2a36',
-  WHITE: '#fff',
-  LIGHTEST_GREY: '#dcdcdc',
-  LIGHT_GREY: '#d3d3d3',
-  MEDIUM_GREY: '#c0c0c0',
-  DARK_GREY: '#808080',
-  DARKEST_GREY: '#696969',
-  DARKEST_GREY_2: '#393939',
-  ORANGE_1: '#FFB55F',
-  ORANGE_2: '#F49A30',
-  ORANGE_3: '#F8892C',
-  ORANGE_4: '#EC720B',
-  ORANGE_5: '#C85F01',
-  BLACK: '#20201e',
-  DEFAULT_BLACK: '#000',
+  primary: {
+    base: '#03a678',
+    primary_20: '#088A66',
+    primary_40: '#0D6F53',
+    primary_60: '#125341',
+  },
+
+  secondary: {
+    base: '#ce2a36',
+    secondary_20: '#AA2731',
+    secondary_40: '#87242C',
+    secondary_60: '#632226',
+  },
+
+  tertiary: {
+    base: '#FF9A22',
+    tertiary_20: '#FFB966',
+    tertiary_40: '#FFCA8C',
+    tertiary_60: '#FFDCB3',
+  },
+
+  feedback: {
+    info: '#2798E9',
+    success: '#03CE61',
+    warning: '#F5AA18',
+    error: '#F45F5F',
+  },
+
+  neutrals: {
+    neutral_100: '#1C1C1C',
+    neutral_200: '#585757',
+    neutral_300: '#969696',
+    neutral_400: '#E7E7E7',
+  },
+
+  background: {
+    primary: '#FFFFFF',
+    secondary: '#F7F7F7',
+  },
+
+  standard: {
+    orange_1: '#FFB55F',
+    orange_2: '#F49A30',
+    orange_3: '#F8892C',
+    orange_4: '#EC720B',
+    orange_5: '#C85F01',
+    white: '#fff',
+    lightest_grey: '#dcdcdc',
+    light_grey: '#d3d3d3',
+    medium_grey: '#c0c0c0',
+    dark_grey: '#808080',
+    darkest_grey: '#696969',
+    darkest_grey_2: '#393939',
+    black: '#20201e',
+    default_black: '#000',
+  },
 };
 
 const sizes = {

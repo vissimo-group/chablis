@@ -15,28 +15,28 @@ const Bar = styled.span`
   }
 
   :nth-child(1) {
-    background-color: ${colors.ORANGE_1};
+    background-color: ${colors.standard.orange_1};
     border-top-left-radius: ${sizes.RADIUS};
     border-bottom-left-radius: ${sizes.RADIUS};
   }
 
   :nth-child(2) {
-    background-color: ${colors.ORANGE_2};
+    background-color: ${colors.standard.orange_2};
     opacity: 0.2;
   }
 
   :nth-child(3) {
-    background-color:  ${colors.ORANGE_3};
+    background-color:  ${colors.standard.orange_3};
     opacity: 0.2;
   }
 
   :nth-child(4) {
-    background-color:  ${colors.ORANGE_4};
+    background-color:  ${colors.standard.orange_4};
     opacity: 0.2;
   }
 
   :nth-child(5) {
-    background-color:  ${colors.ORANGE_5};
+    background-color:  ${colors.standard.orange_5};
     border-top-right-radius: ${sizes.RADIUS};
     border-bottom-right-radius: ${sizes.RADIUS};
     opacity: 0.2;

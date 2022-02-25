@@ -20,7 +20,7 @@ describe('Price', () => {
   });
 
   it('should render with specific text color', () => {
-    const color = colors.DARK_GREY;
+    const color = colors.standard.dark_grey;
     const element = <Price color={color}>R$559</Price>;
 
     const component = mount(element);

@@ -5,8 +5,8 @@ import Tooltip from './';
 import { colors, sizes } from '../../styles/variables';
 
 const style = {
-  background: colors.LIGHT_GREY,
-  color: colors.DARKEST_GREY,
+  background: colors.standard.light_grey,
+  color: colors.standard.darkest_grey,
   display: 'inline-block',
   padding: sizes.DEFAULT,
   textAlign: 'center',

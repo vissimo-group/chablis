@@ -9,10 +9,10 @@ const Card = styled.div`
   justify-content: center;
   width: ${({ width }) => width || '100%'};
   height: ${({ height }) => height || '175px'};
-  background-color: ${colors.LIGHTEST_GREY};
+  background-color: ${colors.standard.lightest_grey};
   border-width: 1px;
   border-style: solid;
-  border-color: ${colors.DARKEST_GREY_2};
+  border-color: ${colors.standard.darkest_grey_2};
   box-sizing: border-box;
   cursor: pointer;
   padding: ${sizes.HALF};

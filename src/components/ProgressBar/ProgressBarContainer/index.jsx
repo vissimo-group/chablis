@@ -9,7 +9,7 @@ const ProgressBarContainer = styled.div`
     font-size: 14px;
     margin-right: 10px;
     width: ${({ labelWidth }) => labelWidth || '60px'};
-    color: ${colors.DEFAULT_BLACK}
+    color: ${colors.standard.default_black}
   }
 `;
 

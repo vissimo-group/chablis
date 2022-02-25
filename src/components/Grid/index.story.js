@@ -6,15 +6,15 @@ import { Column, Row, Container } from './';
 
 const style = {
   width: sizes.FULL,
-  background: colors.PRIMARY,
-  color: colors.WHITE,
+  background: colors.primary.base,
+  color: colors.standard.white,
   padding: `${sizes.DEFAULT} 0`,
   textAlign: 'center',
   borderRadius: sizes.RADIUS,
 };
 
 const containerStyle = {
-  background: colors.LIGHT_GREY,
+  background: colors.standard.light_grey,
   padding: `${sizes.DEFAULT} 0`,
 };
 
@@ -30,7 +30,7 @@ const legendBlockStyle = {
   display: 'inline-block',
   width: sizes.DEFAULT,
   height: sizes.DEFAULT,
-  background: colors.PRIMARY,
+  background: colors.primary.base,
   marginRight: sizes.HALF,
 };
 

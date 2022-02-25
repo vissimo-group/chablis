@@ -11,9 +11,9 @@ import {
 const Tag = styled.span`
   display: inline-block;
   box-sizing: border-box;
-  background-color: ${({ backgroundColor }) => backgroundColor || colors.DARKEST_GREY} ;
+  background-color: ${({ backgroundColor }) => backgroundColor || colors.standard.darkest_grey} ;
   border-radius: ${sizes.RADIUS};
-  color: ${({ color }) => color || colors.WHITE};
+  color: ${({ color }) => color || colors.standard.white};
   font-family: ${fonts.DEFAULT};
   font-size: ${fontSizes.EXTRASMALL};
   font-weight: 700;
