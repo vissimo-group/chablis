@@ -2,10 +2,10 @@ workflows:
   version: 2
   test:
     jobs:
-      - test:
-        filters:
-          branches:
-            only: master
+      - test
+      filters:
+        branches:
+          only: master
 
 version: 2
 jobs:
