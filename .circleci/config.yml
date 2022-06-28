@@ -2,7 +2,10 @@ workflows:
   version: 2
   test:
     jobs:
-      - test
+      - test:
+        filters:
+          branches:
+            only: master
 
 version: 2
 jobs:
@@ -17,3 +20,4 @@ jobs:
       - run: npm install
       - run: npm run lint
       - run: npm test -- --runInBand --coverage --bail
+      - run: npm publish
