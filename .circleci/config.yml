@@ -1,6 +1,6 @@
 workflows:
   version: 2
-  test:
+  test-n-deploy:
     jobs:
       - test
       - deploy:
