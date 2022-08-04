@@ -4,6 +4,7 @@ import { mount } from 'enzyme';
 import SetComponent from './SetComponent';
 
 describe('Card', () => {
+
   it('Should render the default card', () => {
     const element = SetComponent({
       accessibilityText: 'Card Default',
@@ -12,6 +13,7 @@ describe('Card', () => {
       imageCountry: 'image-country',
       width: '337px',
       height: '',
+      darkenBackground: true,
     });
 
     const tree = renderer.create(element).toJSON();
@@ -23,9 +25,10 @@ describe('Card', () => {
       accessibilityText: 'Card Default',
       imageCard: 'bg-image',
       imageLogo: 'image-logo',
-      imageCountry: false,
+      imageCountry: '',
       width: '337px',
       height: '',
+      darkenBackground: true,
     });
 
     const component = mount(element);
@@ -40,6 +43,7 @@ describe('Card', () => {
       imageCountry: 'image-country',
       width: '',
       height: '',
+      darkenBackground: true,
     });
 
     const component = mount(element);
@@ -54,6 +58,7 @@ describe('Card', () => {
       imageCountry: '',
       width: '',
       height: '',
+      darkenBackground: true,
     });
 
     const component = mount(element);

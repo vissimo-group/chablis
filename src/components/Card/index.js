@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled, { css } from 'styled-components';
 import { breakpoints, colors, sizes } from '../../styles/variables';
 
 const Card = styled.div`
@@ -22,29 +21,29 @@ const Card = styled.div`
   z-index: 1;
   object-fit: fill;
 
-  ::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .3);
-    z-index: 1;
-    transition: background-color .2s ease-out;
+  ${props => props.darkenBackground && css`
+    ::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .3);
+      z-index: 1;
 
-    @media screen and (min-width: ${breakpoints.SMALL}) {
-      background-color: rgba(0, 0, 0, .55);
+      @media screen and (min-width: ${breakpoints.SMALL}) {
+        background-color: rgba(0, 0, 0, .55);
+      }
     }
-  }
+  `}
 
   :hover,
   :focus {
-    ::before {
-      background-color: rgba(0, 0, 0, .4);
-    }
+    transform: scale(1.01);
+    transition: .2s linear;
   }
 
   .image-card,
