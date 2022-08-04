@@ -42,7 +42,7 @@ const Card = styled.div`
 
   :hover,
   :focus {
-    transform: scale(1.01);
+    transform: scale(1.02);
     transition: .2s linear;
   }
 
