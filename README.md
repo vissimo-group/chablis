@@ -14,8 +14,8 @@
 We have all components listed on our documentation. Here is the first one to get you started:
 
 ```jsx
-import React from 'react';
-import { Button } from 'chablis';
+import React from "react";
+import { Button } from "chablis";
 
 class HelloButton extends React.Component {
   render() {
@@ -29,7 +29,7 @@ export default HelloButton;
 ## Installation
 
 ```bash
-yarn add github:Evino/chablis
+yarn add chablis
 ```
 
 But all commands run with `npm` as well.

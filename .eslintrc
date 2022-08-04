@@ -7,18 +7,12 @@
     "jest": true
   },
   "rules": {
-    "max-len": [
-      2,
-      124,
-      4
-    ],
+    "max-len": [2, 124, 4],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "react/prefer-stateless-function": false,
