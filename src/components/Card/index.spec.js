@@ -4,7 +4,6 @@ import { mount } from 'enzyme';
 import SetComponent from './SetComponent';
 
 describe('Card', () => {
-
   it('Should render the default card', () => {
     const element = SetComponent({
       accessibilityText: 'Card Default',
