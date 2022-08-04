@@ -62,3 +62,5 @@ typings/
 coverage/
 
 .DS_Store
+
+.idea/
