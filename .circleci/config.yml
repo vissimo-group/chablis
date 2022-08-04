@@ -2,7 +2,10 @@ workflows:
   version: 2
   test:
     jobs:
-      - test:
+      - test
+      - deploy:
+          requires:
+            - test
           filters:
             branches:
               only: master
@@ -20,4 +23,16 @@ jobs:
       - run: npm install
       - run: npm run lint
       - run: npm test -- --runInBand --coverage --bail
+
+  deploy:
+    working_directory: /home/circleci/chablis
+    parallelism: 1
+    shell: /bin/bash --login
+    docker:
+      - image: circleci/node:10.15.0-stretch-browsers
+    steps:
+      - checkout
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > .npmrc
       - run: npm publish
