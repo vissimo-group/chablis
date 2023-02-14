@@ -6,7 +6,7 @@ import {
 } from '../../styles/variables';
 import CopyCode from '../CopyCode';
 
-const CupomWrapper = styled.div`
+export const CupomWrapper = styled.div`
     width: 274px;
     display: flex;
     flex-direction: column;
