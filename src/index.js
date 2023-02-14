@@ -7,6 +7,7 @@ import { Container, Column, Row } from './components/Grid';
 import ProgressBar from './components/ProgressBar';
 import Price from './components/Price';
 import CopyCode from './components/CopyCode';
+import Cupom from './components/Cupom';
 
 
 import {
@@ -40,4 +41,5 @@ export default {
   ProgressBar,
   Price,
   CopyCode,
+  Cupom,
 };

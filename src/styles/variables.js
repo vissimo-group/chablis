@@ -102,6 +102,7 @@ export const zIndexes = {
 
 const fonts = {
   DEFAULT: 'Montserrat',
+  BARLOW: 'Barlow Semi Condensed, sans-serif',
 };
 
 export {
