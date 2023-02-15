@@ -19,6 +19,30 @@ const BigCupomWrapper = styled(CupomWrapper)`
         width: 1168px;
         height: 500px;
         padding: 0rem 80px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            top: 220px;
+            left: -50px;
+            background: white;
+            z-index: 0;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            top: 220px;
+            right: -50px;
+            background: white;
+            z-index: 0;
+        }
     }
 `;
 

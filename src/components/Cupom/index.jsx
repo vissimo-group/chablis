@@ -7,10 +7,37 @@ import {
 import CopyCode from '../CopyCode';
 
 export const CupomWrapper = styled.div`
+    position: relative;
     width: 274px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        border-radius: 28px;
+        bottom: -28px;
+        right: 108px;
+        background: white;
+        z-index: 0;
+        border: 1px solid gray;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        border-radius: 28px;
+        top: -28px;
+        right: 108px;
+        background: white;
+        z-index: 0;
+    }
 `;
 
 const CupomImage = styled.div`
