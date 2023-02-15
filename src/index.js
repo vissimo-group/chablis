@@ -6,6 +6,9 @@ import CustomTooltip from './components/CustomTooltip';
 import { Container, Column, Row } from './components/Grid';
 import ProgressBar from './components/ProgressBar';
 import Price from './components/Price';
+import CopyCode from './components/CopyCode';
+import Cupom from './components/Cupom';
+
 
 import {
   BodyLarge,
@@ -37,4 +40,6 @@ export default {
   Tag,
   ProgressBar,
   Price,
+  CopyCode,
+  Cupom,
 };
