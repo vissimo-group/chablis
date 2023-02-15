@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
-  colors, fontWeights, fonts, fontSizes,
+  colors, fontWeights, fonts, fontSizes, breakpoints,
 } from '../../styles/variables';
 import { CupomWrapper } from '../Cupom';
 
@@ -14,7 +14,7 @@ const BigCupomWrapper = styled(CupomWrapper)`
     padding: 32px 0;
     background-color: ${colors.standard.default_black};
 
-    @media (min-width: 400px) {
+    @media (min-width: ${breakpoints.LARGE}) {
         flex-direction: row-reverse;
         width: 1168px;
         height: 500px;
@@ -33,7 +33,7 @@ const CupomImage = styled.div`
     background-color: ${colors.standard.default_black};
     padding: 1rem;
 
-    @media (min-width: 400px) {
+    @media (min-width: ${breakpoints.LARGE}) {
         background-size: 337px;
     }
 `;
@@ -46,7 +46,7 @@ const CupomDetails = styled.div`
     padding: 1.5rem 1rem 0 1rem;
     border-top: 2px dashed ${colors.neutrals.neutral_100};
 
-    @media (min-width: 400px) {
+    @media (min-width: ${breakpoints.LARGE}) {
         justify-content: center;
         width: 100%;
         border-top:  none;
@@ -63,7 +63,7 @@ const CupomTitle = styled.span`
     font-size: 24px;
     font-weight: ${fontWeights.REGULAR};
 
-    @media (min-width: 400px) {
+    @media (min-width: ${breakpoints.LARGE}) {
         font-size: ${fontSizes.LARGE};
         text-align: left;
     }
@@ -74,8 +74,9 @@ const CupomDescription = styled.div`
     font-family: ${fonts.BARLOW};
     color: white;
     font-size: 14px;
+    line-height: 1.5;
 
-    @media (min-width: 400px) {
+    @media (min-width: ${breakpoints.LARGE}) {
         justify-content: center;
         width: 100%;
         font-size: ${fontSizes.BIG};

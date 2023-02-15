@@ -17,6 +17,7 @@ const CupomCode = styled.div`
   margin-bottom: 1em;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 const Code = styled.span`
@@ -44,7 +45,7 @@ const CupomCodeIcon = styled.div`
 
 const CopyCode = ({ code }) => (
   <CupomCodeWrapper>
-    <CupomCode>
+    <CupomCode onClick={() => { navigator.clipboard.writeText(code); }}>
       <Code>{code}</Code>
       <CupomCodeIcon>X</CupomCodeIcon>
     </CupomCode>
