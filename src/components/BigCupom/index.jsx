@@ -14,20 +14,20 @@ const BigCupomWrapper = styled(CupomWrapper)`
     padding: 32px 0;
     background-color: ${colors.standard.default_black};
 
-    @media (min-width: ${breakpoints.LARGE}) {
+    @media (min-width: ${breakpoints.NORMAL}) {
         flex-direction: row-reverse;
-        width: 1168px;
-        height: 500px;
+        width: 727px;
+        height: 320px;
         padding: 0rem 80px;
 
         &:before {
             content: '';
             position: absolute;
-            width: 80px;
-            height: 80px;
+            width: 56px;
+            height: 56px;
             border-radius: 40px;
-            top: 220px;
-            left: -50px;
+            top: 131px;
+            left: -40px;
             background: white;
             z-index: 0;
         }
@@ -35,13 +35,34 @@ const BigCupomWrapper = styled(CupomWrapper)`
         &:after {
             content: '';
             position: absolute;
-            width: 80px;
-            height: 80px;
+            width: 56px;
+            height: 56px;
             border-radius: 40px;
-            top: 220px;
-            right: -50px;
+            top: 131px;
+            right: -40px;
             background: white;
             z-index: 0;
+        }
+    }
+
+    @media (min-width: ${breakpoints.LARGE}) {
+        flex-direction: row-reverse;
+        width: 1168px;
+        height: 500px;
+        padding: 0rem 80px;
+
+        &:before {
+            width: 80px;
+            height: 80px;
+            top: 220px;
+            left: -50px;
+        }
+
+        &:after {
+            width: 80px;
+            height: 80px;
+            top: 220px;
+            right: -50px;
         }
     }
 `;
@@ -70,7 +91,7 @@ const CupomDetails = styled.div`
     padding: 1.5rem 1rem 0 1rem;
     border-top: 2px dashed ${colors.neutrals.neutral_100};
 
-    @media (min-width: ${breakpoints.LARGE}) {
+    @media (min-width: ${breakpoints.NORMAL}) {
         justify-content: center;
         width: 100%;
         border-top:  none;
@@ -87,9 +108,12 @@ const CupomTitle = styled.span`
     font-size: 24px;
     font-weight: ${fontWeights.REGULAR};
 
+    @media (min-width: ${breakpoints.NORMAL}) {
+        text-align: left;
+    }
+
     @media (min-width: ${breakpoints.LARGE}) {
         font-size: ${fontSizes.LARGE};
-        text-align: left;
     }
 `;
 
@@ -100,11 +124,14 @@ const CupomDescription = styled.div`
     font-size: 14px;
     line-height: 1.5;
 
-    @media (min-width: ${breakpoints.LARGE}) {
+    @media (min-width: ${breakpoints.NORMAL}) {
         justify-content: center;
         width: 100%;
-        font-size: ${fontSizes.BIG};
         text-align: left;
+    }
+
+    @media (min-width: ${breakpoints.LARGE}) {
+        font-size: ${fontSizes.BIG};
     }
 `;
 

@@ -8,8 +8,8 @@ const cupomDescription = `
     iluminação interna em LED, baixo consumo de energia, e prateleiras cromadas, deslizantes e reguláveis. 127V.
 `;
 
-const cumpomImage = `https://res.cloudinary.com/evino/image/upload/q_auto:good,
-fl_progressive:steep,f_auto,dpr_2.0,h_280/v1/products/1685630-standing-front.png`;
+const cumpomImage = `https://evino-res.cloudinary.com/image/upload/v1676467815/
+teste%20m%C3%AAs%20do%20consumidor/adega.png`;
 
 storiesOf('BigCupom', module)
   .addWithInfo('BigCupom', () => (
