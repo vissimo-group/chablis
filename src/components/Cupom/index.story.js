@@ -5,8 +5,8 @@ import Cupom from '.';
 const cupomDescription = `Curabitur velit neque, convallis in nibh at, facilisis dictum elit.
 Integer varius dui vel mauris pharetra, sit amet vulputate nunc`;
 
-const cumpomImage = `https://res.cloudinary.com/evino/image/upload/q_auto:good,
-fl_progressive:steep,f_auto,dpr_2.0,h_280/v1/products/1685630-standing-front.png`;
+const cumpomImage = `https://evino-res.cloudinary.com/image/upload/v1676378694/
+teste%20m%C3%AAs%20do%20consumidor/categoria-bronze.png`;
 
 storiesOf('Cupom', module)
   .addWithInfo('Cupom', () => (

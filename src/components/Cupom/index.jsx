@@ -24,7 +24,7 @@ export const CupomWrapper = styled.div`
         right: 108px;
         background: white;
         z-index: 0;
-        border: 1px solid gray;
+        border: 1px solid ${colors.neutrals.neutral_400};
     }
 
     &:before {
@@ -53,7 +53,7 @@ const CupomImage = styled.div`
 `;
 
 const CupomDetails = styled.div`
-    border: 1px solid gray;
+    border: 1px solid ${colors.neutrals.neutral_400};
     border-radius: 0 0 8px 8px;
     height: 268px;
     display: flex;

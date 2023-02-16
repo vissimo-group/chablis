@@ -8,6 +8,7 @@ import ProgressBar from './components/ProgressBar';
 import Price from './components/Price';
 import CopyCode from './components/CopyCode';
 import Cupom from './components/Cupom';
+import BigCupom from './components/BigCupom';
 
 
 import {
@@ -42,4 +43,5 @@ export default {
   Price,
   CopyCode,
   Cupom,
+  BigCupom,
 };
