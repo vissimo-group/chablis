@@ -5,7 +5,6 @@ import {
   colors, fontWeights, fonts, fontSizes, breakpoints,
 } from '../../styles/variables';
 import { CupomWrapper } from '../Cupom';
-import '../../fonts.css';
 
 const BigCupomWrapper = styled(CupomWrapper)`
     height: 536px;
