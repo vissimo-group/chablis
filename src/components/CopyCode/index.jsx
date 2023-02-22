@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { colors, fontSizes, fonts } from '../../styles/variables';
 
 const CupomCodeWrapper = styled.div`
@@ -10,10 +10,10 @@ const CupomCodeWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 28px;
 `;
 
 const CupomCode = styled.div`
+  position: relative;
   margin-bottom: 1em;
   display: flex;
   align-items: center;
@@ -32,6 +32,12 @@ const Code = styled.span`
   border-radius:  10px 0 0 10px;
 `;
 
+const animation = keyframes`
+ 0% { opacity: 1 }
+ 50% { opacity: 0 }
+ 100% { opacity: 1; }
+`;
+
 const CupomCodeIcon = styled.div`
   cursor: pointer;
   background-color: ${colors.primary.base};
@@ -41,12 +47,18 @@ const CupomCodeIcon = styled.div`
   border-radius:  0 10px 10px 0;
   height: 52px;
   width: 56px;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in;
+
 
   :hover,
   :focus {
     background: ${colors.primary.primary_20};
+  }
+
+  &.copied { animation-name: ${animation};
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
   }
 `;
 
@@ -76,20 +88,77 @@ const copyIcon = (
   </svg>
 );
 
+const checkIcon = (
+  <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3.92598 8.49389C3.92006 8.48835 3.91422
+      8.48269 3.90844 8.47691L1.0683 5.63677C0.77541 5.34388 0.77541 4.869 1.0683 4.57611C1.3612
+      4.28322 1.83607 4.28322 2.12896 4.57611L4.47358 6.92073L10.9319 0.462407C11.2248 0.169514
+      11.6997 0.169513 11.9926 0.462406C12.2854 0.755299 12.2854 1.23017 11.9926 1.52307L5.0039
+      8.51173C4.71101 8.80462 4.23613 8.80462 3.94324 8.51173C3.93737 8.50586 3.93161 8.49991
+      3.92598 8.49389Z"
+      fill="white"
+    />
+  </svg>
+);
 
-const CopyCode = ({ code }) => (
+const CopyCode = ({
+  code, copied, toggleCopied, helperText,
+}) => (
   <CupomCodeWrapper>
-    <CupomCode onClick={() => { navigator.clipboard.writeText(code); }}>
+    <CupomCode onClick={() => { navigator.clipboard.writeText(code); toggleCopied(); }}>
       <Code>{code}</Code>
-      <CupomCodeIcon>{copyIcon}</CupomCodeIcon>
+
+      <CupomCodeIcon className={copied ? 'copied' : ''}>{copyIcon}</CupomCodeIcon>
+      <CupomCodeIcon style={{ position: 'absolute', right: '0', 'z-index': '-1' }}>{checkIcon}</CupomCodeIcon>
     </CupomCode>
 
-    Copie e cole o código no carrinho
+    {helperText}
   </CupomCodeWrapper>
 );
 
+class CopyCodeComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { copied: false };
+  }
+
+  toggleCopied = () => {
+    this.setState({ copied: true });
+    setTimeout(() => this.setState({ copied: false }), 1500);
+  }
+
+  render() {
+    const { code, helperText } = this.props;
+    const { copied } = this.state;
+
+    return (
+      <CopyCode
+        code={code}
+        copied={copied}
+        toggleCopied={this.toggleCopied}
+        helperText={helperText}
+      />
+    );
+  }
+}
+
 CopyCode.propTypes = {
   code: PropTypes.string,
+  copied: PropTypes.bool,
+  toggleCopied: PropTypes.func,
+  helperText: PropTypes.string,
 };
 
-export default CopyCode;
+CopyCodeComponent.propTypes = {
+  code: PropTypes.string,
+  helperText: PropTypes.string,
+};
+
+CopyCodeComponent.defaultProps = {
+  helperText: 'Copie e cole o código no carrinho',
+};
+
+export default CopyCodeComponent;

@@ -9,6 +9,7 @@ import CopyCode from '../CopyCode';
 export const CupomWrapper = styled.div`
     position: relative;
     width: 274px;
+    height: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,25 +43,27 @@ export const CupomWrapper = styled.div`
 
 const CupomImage = styled.div`
     box-sizing: border-box;
-    height: 268px;
+    height: 100%;
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid ${colors.neutrals.neutral_400};
     border-bottom: 1px dashed ${colors.neutrals.neutral_200};
     border-radius: 8px 8px 0 0;
     background-image: url(${props => props.image});
     background-size: cover;
-    background-color: gray;
+    background-color: ${colors.neutrals.neutral_400};
 `;
 
 const CupomDetails = styled.div`
     border: 1px solid ${colors.neutrals.neutral_400};
     border-radius: 0 0 8px 8px;
-    height: 268px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: 1rem 1rem 2.5rem 1rem;
     text-align: center;
 `;
 
@@ -77,7 +80,7 @@ const CupomDescription = styled.div`
 `;
 
 const Cupom = ({
-  image, title, description, code,
+  image, title, description, code, helperText,
 }) => (
   <CupomWrapper>
     <CupomImage image={image} />
@@ -85,7 +88,7 @@ const Cupom = ({
     <CupomDetails>
       <CupomTitle>{title}</CupomTitle>
       <CupomDescription>{description}</CupomDescription>
-      <CopyCode code={code} />
+      <CopyCode code={code} helperText={helperText} />
     </CupomDetails>
   </CupomWrapper>
 );
@@ -95,6 +98,7 @@ Cupom.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   code: PropTypes.string,
+  helperText: PropTypes.string,
 };
 
 export default Cupom;

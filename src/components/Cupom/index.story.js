@@ -10,5 +10,10 @@ teste%20m%C3%AAs%20do%20consumidor/categoria-bronze.png`;
 
 storiesOf('Cupom', module)
   .addWithInfo('Cupom', () => (
-    <Cupom image={cumpomImage} title="Jim Beam White Kentucky " description={cupomDescription} code="JIMBEAM" />
+    <Cupom
+      image={cumpomImage}
+      title="Jim Beam White Kentucky"
+      description={cupomDescription}
+      code="JIMBEAM"
+    />
   ));
