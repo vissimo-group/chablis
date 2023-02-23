@@ -91,13 +91,13 @@ const CupomDetails = styled.div`
     flex-direction: column;
     height: 100%;
     padding: 1.5rem 1rem 0 1rem;
-    border-top: 2px dashed ${colors.neutrals.neutral_100};
+    border-top: 2px dashed ${colors.neutrals.neutral_300};
 
     @media (min-width: ${breakpoints.NORMAL}) {
         justify-content: center;
         width: 100%;
         border-top:  none;
-        border-right: 2px dashed ${colors.neutrals.neutral_100};
+        border-right: 2px dashed ${colors.neutrals.neutral_300};
         padding: 0 2rem 0 0;
     }
 `;
