@@ -20,6 +20,7 @@ const CupomCode = styled.div`
 `;
 
 const Code = styled.span`
+  box-sizing: border-box;
   font-family: ${fonts.BARLOW};
   font-size: ${fontSizes.NORMAL};
   color: ${colors.neutrals.neutral_100};
@@ -27,7 +28,7 @@ const Code = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 52px;
   border: 1px solid ${colors.neutrals.neutral_300};
   border-radius:  10px 0 0 10px;
 `;

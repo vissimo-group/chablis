@@ -25,7 +25,7 @@ export const CupomWrapper = styled.div`
         right: 108px;
         background: white;
         z-index: 0;
-        border: 1px solid ${colors.neutrals.neutral_400};
+        border: 2px solid ${colors.neutrals.neutral_400};
     }
 
     &:before {
@@ -45,7 +45,7 @@ const CupomImage = styled.div`
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    border: 1px solid ${colors.neutrals.neutral_400};
+    border: 2px solid ${colors.neutrals.neutral_400};
     border-bottom: 1px dashed ${colors.neutrals.neutral_200};
     border-radius: 8px 8px 0 0;
     background-image: url(${props => props.image});
@@ -54,7 +54,7 @@ const CupomImage = styled.div`
 `;
 
 const CupomDetails = styled.div`
-    border: 1px solid ${colors.neutrals.neutral_400};
+    border: 2px solid ${colors.neutrals.neutral_400};
     border-radius: 0 0 8px 8px;
     height: 100%;
     width: 100%;
@@ -75,6 +75,8 @@ const CupomTitle = styled.span`
 `;
 
 const CupomDescription = styled.div`
+    max-height: 119px;
+    overflow: hidden;
     font-family: ${fonts.BARLOW};
     color: ${colors.neutrals.neutral_100};
 `;
