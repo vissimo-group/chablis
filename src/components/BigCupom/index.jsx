@@ -46,10 +46,8 @@ const BigCupomWrapper = styled(CupomWrapper)`
     }
 
     @media (min-width: ${breakpoints.LARGE}) {
-        flex-direction: row-reverse;
         width: 1168px;
         height: 500px;
-        padding: 0rem 80px;
 
         &:before {
             width: 80px;
@@ -78,8 +76,12 @@ const CupomImage = styled.div`
     background-color: ${colors.standard.default_black};
     padding: 1rem;
 
+    @media (min-width: ${breakpoints.NORMAL}) {
+        background-size: 260px;
+    }
+
     @media (min-width: ${breakpoints.LARGE}) {
-        background-size: 337px;
+        background-size: 440px;
     }
 `;
 
@@ -101,6 +103,7 @@ const CupomDetails = styled.div`
 `;
 
 const CupomTitle = styled.span`
+    font-family: ${fonts.PAYTONE};
     margin-bottom: 0.5em;
     text-align: center;
     color: white;

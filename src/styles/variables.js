@@ -103,7 +103,7 @@ export const zIndexes = {
 const fonts = {
   DEFAULT: 'Montserrat',
   BARLOW: 'Barlow Semi Condensed, sans-serif',
-  PAYTONE: 'Paytone One, sans-serif', // TODO: Investigate issue with this font
+  PAYTONE: 'Paytone One, sans-serif',
 };
 
 export {
