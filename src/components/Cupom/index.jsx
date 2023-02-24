@@ -68,6 +68,8 @@ const CupomDetails = styled.div`
 `;
 
 const CupomTitle = styled.span`
+    max-height: 42px;
+    overflow: hidden;
     font-family: ${fonts.BARLOW};
     font-size: ${fontSizes.BIG};
     font-weight: ${fontWeights.SEMIBOLD};
@@ -75,7 +77,7 @@ const CupomTitle = styled.span`
 `;
 
 const CupomDescription = styled.div`
-    max-height: 119px;
+    max-height: 99px;
     overflow: hidden;
     font-family: ${fonts.BARLOW};
     color: ${colors.neutrals.neutral_100};
