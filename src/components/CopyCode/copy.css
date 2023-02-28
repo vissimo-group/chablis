@@ -1,0 +1,38 @@
+.copy-code {
+    border: none;
+    cursor: pointer;
+    background-color: #03a678;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    height: 52px;
+    width: 56px;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.copy-code.copied {
+    animation-name: animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+.copy-code:hover,
+.copy-code:focus {
+    background: #088A66;
+}

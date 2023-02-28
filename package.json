@@ -32,8 +32,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@storybook/react": "^3.3.15",
     "@storybook/addon-info": "^3.3.15",
+    "@storybook/react": "^3.3.15",
     "babel-core": "6.26.3",
     "babel-eslint": "10.0.1",
     "babel-jest": "23.6.0",
@@ -63,6 +63,7 @@
   "dependencies": {
     "prop-types": "15.6.2",
     "react": "16.6.3",
+    "react-clipboard.js": "2.0.16",
     "react-dom": "16.6.3",
     "styled-components": "4.4.1"
   },

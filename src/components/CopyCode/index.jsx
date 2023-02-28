@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
+import Clipboard from 'react-clipboard.js';
 import { colors, fontSizes, fonts } from '../../styles/variables';
+import './copy.css';
 
 const CupomCodeWrapper = styled.div`
   font-family: ${fonts.BARLOW};
@@ -50,7 +52,6 @@ const CupomCodeIcon = styled.div`
   width: 56px;
   transition-duration: 1.5s;
   transition-timing-function: ease-in;
-
 
   :hover,
   :focus {
@@ -109,10 +110,17 @@ const CopyCode = ({
   code, copied, toggleCopied, helperText,
 }) => (
   <CupomCodeWrapper>
-    <CupomCode onClick={() => { navigator.clipboard.writeText(code); toggleCopied(); }}>
+    <CupomCode>
       <Code>{code}</Code>
 
-      <CupomCodeIcon className={copied ? 'copied' : ''}>{copyIcon}</CupomCodeIcon>
+      <Clipboard
+        data-clipboard-text={code}
+        className={copied ? 'copy-code copied' : 'copy-code'}
+        onClick={() => { toggleCopied(); }}
+      >
+        {copyIcon}
+
+      </Clipboard>
       <CupomCodeIcon style={{ position: 'absolute', right: '0', 'z-index': '-1' }}>{checkIcon}</CupomCodeIcon>
     </CupomCode>
 
