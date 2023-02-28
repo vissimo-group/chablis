@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 import Clipboard from 'react-clipboard.js';
 import { colors, fontSizes, fonts } from '../../styles/variables';
-import './copy.css';
 
 const CupomCodeWrapper = styled.div`
   font-family: ${fonts.BARLOW};
@@ -14,11 +13,46 @@ const CupomCodeWrapper = styled.div`
   align-items: center;
 `;
 
+const animation = keyframes`
+  0% { opacity: 1 }
+  50% { opacity: 0 }
+  100% { opacity: 1; }
+`;
+
+const copyCodeBaseClass = `
+  border: none
+  cursor: pointer;
+  background-color: ${colors.primary.base};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:  0 10px 10px 0;
+  height: 52px;
+  width: 56px;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in;
+
+  :hover,
+  :focus {
+    background: ${colors.primary.primary_20};
+  }
+`;
+
 const CupomCode = styled.div`
   position: relative;
   margin-bottom: 1em;
   display: flex;
   align-items: center;
+  
+  .copy-code {
+    ${copyCodeBaseClass}
+
+    &.copied { 
+      animation-name: ${animation};
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+  }
 `;
 
 const Code = styled.span`
@@ -35,28 +69,8 @@ const Code = styled.span`
   border-radius:  10px 0 0 10px;
 `;
 
-const animation = keyframes`
- 0% { opacity: 1 }
- 50% { opacity: 0 }
- 100% { opacity: 1; }
-`;
-
 const CupomCodeIcon = styled.div`
-  cursor: pointer;
-  background-color: ${colors.primary.base};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius:  0 10px 10px 0;
-  height: 52px;
-  width: 56px;
-  transition-duration: 1.5s;
-  transition-timing-function: ease-in;
-
-  :hover,
-  :focus {
-    background: ${colors.primary.primary_20};
-  }
+  ${copyCodeBaseClass}
 
   &.copied { animation-name: ${animation};
     animation-duration: 1.5s;
@@ -119,7 +133,6 @@ const CopyCode = ({
         onClick={() => { toggleCopied(); }}
       >
         {copyIcon}
-
       </Clipboard>
       <CupomCodeIcon style={{ position: 'absolute', right: '0', 'z-index': '-1' }}>{checkIcon}</CupomCodeIcon>
     </CupomCode>
