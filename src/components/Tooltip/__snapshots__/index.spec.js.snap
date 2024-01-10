@@ -2,7 +2,13 @@
 
 exports[`Tooltip Should render a tooltip 1`] = `
 <span
-  className="sc-bdVaJa ghtGNQ"
+  align="top-end"
+  alignX="right"
+  alignY="bottom"
+  className="sc-bcXGWu gAYycp"
+  show={true}
+  spaced={false}
+  text="This is a tooltip"
   type="default"
 >
   This is a tooltip

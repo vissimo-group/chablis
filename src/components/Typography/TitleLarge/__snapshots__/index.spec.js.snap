@@ -2,7 +2,8 @@
 
 exports[`TitleLarge should render a subtitle 1`] = `
 <h3
-  className="sc-bdVaJa ggrZgi"
+  className="sc-bcXGWu knlJni"
+  small={false}
 >
   This is a SubTitle
 </h3>

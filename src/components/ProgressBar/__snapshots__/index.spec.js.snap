@@ -2,30 +2,37 @@
 
 exports[`ProgressBar Should activate specific active tags 1`] = `
 <div
-  className="sc-htoDjs hqjyJW"
+  className="sc-ftTHFa fiaeRQ"
 >
   <p
-    className="sc-htpNat hKYTRr"
+    className="sc-dkrGVk bLJqqK"
+    small={false}
   >
     Teste
   </p>
   <div
-    className="sc-dnqmqq iYbmIC"
+    active={3}
+    className="sc-pyfiu kzxVBa"
   >
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
   </div>
 </div>
@@ -33,30 +40,37 @@ exports[`ProgressBar Should activate specific active tags 1`] = `
 
 exports[`ProgressBar Should render the component 1`] = `
 <div
-  className="sc-htoDjs hqjyJW"
+  className="sc-ftTHFa fiaeRQ"
 >
   <p
-    className="sc-htpNat hKYTRr"
+    className="sc-dkrGVk bLJqqK"
+    small={false}
   >
     Teste
   </p>
   <div
-    className="sc-dnqmqq iYbmIC"
+    active={3}
+    className="sc-pyfiu kzxVBa"
   >
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
     <span
-      className="sc-iwsKbI knSyvG"
+      active={3}
+      className="sc-jrcSnH gNZZvb"
     />
   </div>
 </div>

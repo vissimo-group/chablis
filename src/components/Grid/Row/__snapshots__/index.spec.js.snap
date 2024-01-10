@@ -2,7 +2,8 @@
 
 exports[`Row should render a row div 1`] = `
 <div
-  className="sc-bdVaJa bAYzrn"
+  align="flex-start"
+  className="sc-bcXGWu htVJnA"
 >
   <span>
     Subcomponent
