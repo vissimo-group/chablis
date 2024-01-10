@@ -2,7 +2,7 @@
 
 exports[`HeadingSmall should render a title 1`] = `
 <h2
-  className="sc-bdVaJa jdMPXy"
+  className="sc-bcXGWu hilMCh"
 >
   This is a title
 </h2>
