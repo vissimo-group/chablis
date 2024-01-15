@@ -10,39 +10,43 @@ const Bar = styled.span`
   margin-right: 0.6%;
   position: relative;
 
-  @media(min-width: 769px) {
+  @media (min-width: 769px) {
     margin-right: 0.2%;
   }
 
-  :nth-child(1) {
+  &:nth-child(1) {
     background-color: ${colors.standard.orange_1};
     border-top-left-radius: ${sizes.RADIUS};
     border-bottom-left-radius: ${sizes.RADIUS};
   }
 
-  :nth-child(2) {
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5) {
     background-color: ${colors.standard.orange_2};
     opacity: 0.2;
   }
 
-  :nth-child(3) {
-    background-color:  ${colors.standard.orange_3};
-    opacity: 0.2;
+  &:nth-child(2) {
+    background-color: ${colors.standard.orange_2};
   }
 
-  :nth-child(4) {
-    background-color:  ${colors.standard.orange_4};
-    opacity: 0.2;
+  &:nth-child(3) {
+    background-color: ${colors.standard.orange_3};
   }
 
-  :nth-child(5) {
-    background-color:  ${colors.standard.orange_5};
+  &:nth-child(4) {
+    background-color: ${colors.standard.orange_4};
+  }
+
+  &:nth-child(5) {
+    background-color: ${colors.standard.orange_5};
     border-top-right-radius: ${sizes.RADIUS};
     border-bottom-right-radius: ${sizes.RADIUS};
-    opacity: 0.2;
   }
 
-  :nth-child(-n+${({ active }) => active}) {
+  &:nth-child(-n + ${({ active }) => active}) {
     opacity: 1;
   }
 `;
