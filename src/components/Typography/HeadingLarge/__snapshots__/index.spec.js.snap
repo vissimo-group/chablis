@@ -2,7 +2,7 @@
 
 exports[`HeadingLarge should render a title 1`] = `
 <h2
-  className="sc-bcXGWu hUgoVA"
+  className="sc-aXZVg bXeNeM"
 >
   This is a title
 </h2>

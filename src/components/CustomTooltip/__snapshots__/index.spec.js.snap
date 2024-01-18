@@ -2,11 +2,7 @@
 
 exports[`CustomTooltip Should render a tooltip 1`] = `
 <span
-  alignX="left"
-  alignY="top"
-  className="sc-bcXGWu sc-gswPWN bUdpZz jUOAFI custom-tooltip"
-  show={true}
-  spaced={false}
+  className="sc-aXZVg sc-gEvEer grgWYs jhznbY custom-tooltip"
   type="default"
 >
   <img
