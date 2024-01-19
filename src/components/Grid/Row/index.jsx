@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { sizes } from '../../../styles/variables';
-
 
 const RowDiv = styled.div`
   display: flex;
@@ -12,7 +11,9 @@ const RowDiv = styled.div`
   margin-left: -${sizes.HALF};
   margin-right: -${sizes.HALF};
 
-  ${props => props.styles}
+  ${props => props.styles && css`
+      ${props.styles}
+    `}
 `;
 
 export default class Row extends PureComponent {
@@ -26,15 +27,13 @@ export default class Row extends PureComponent {
       'baseline',
       'stretch',
     ]),
-  }
+  };
 
   static defaultProps = {
     align: 'flex-start',
-  }
+  };
 
   render() {
-    return (
-      <RowDiv {...this.props}>{this.props.children}</RowDiv>
-    );
+    return <RowDiv {...this.props}>{this.props.children}</RowDiv>;
   }
 }

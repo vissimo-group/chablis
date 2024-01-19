@@ -17,25 +17,24 @@ const media = Object.keys(breakpoints).reduce((prev, next) => {
 }, '');
 
 const restrictContainerWidth = (prop, breakpoint) => prop && css`
-  @media (min-width: ${breakpoint}) {
-    max-width: 100%;
-  }
-`;
-
+    @media (min-width: ${breakpoint}) {
+      max-width: 100%;
+    }
+  `;
 
 const ContainerDiv = styled.div`
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  transition: .3s ease-out;
-  padding-left: ${sizes.HALF}
-  padding-right: ${sizes.HALF}
+  transition: 0.3s ease-out;
+  padding-left: ${sizes.HALF};
+  padding-right: ${sizes.HALF};
 
   ${media}
 
   ${props => props.full && css`
-    max-width: 100%;
-  `}
+      max-width: 100%;
+    `}
 
   ${props => restrictContainerWidth(props.fullTablet, breakpoints.SMALL)}
   ${props => restrictContainerWidth(props.fullSmallDesktop, breakpoints.NORMAL)}
@@ -43,19 +42,27 @@ const ContainerDiv = styled.div`
   ${props => restrictContainerWidth(props.fullLargeDesktop, breakpoints.LARGE)}
 `;
 
-export default class Container extends PureComponent {
+class Container extends PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
     full: PropTypes.bool,
-  }
+    fullTablet: PropTypes.bool,
+    fullSmallDesktop: PropTypes.bool,
+    fullDesktop: PropTypes.bool,
+    fullLargeDesktop: PropTypes.bool,
+  };
 
   static defaultProps = {
     full: false,
-  }
+    fullTablet: false,
+    fullSmallDesktop: false,
+    fullDesktop: false,
+    fullLargeDesktop: false,
+  };
 
   render() {
-    return (
-      <ContainerDiv {...this.props}>{this.props.children}</ContainerDiv>
-    );
+    return <ContainerDiv {...this.props}>{this.props.children}</ContainerDiv>;
   }
 }
+
+export default Container;

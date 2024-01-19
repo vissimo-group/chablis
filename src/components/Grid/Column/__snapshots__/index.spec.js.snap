@@ -2,10 +2,7 @@
 
 exports[`Column should render a column div 1`] = `
 <div
-  align="auto"
-  className="sc-bcXGWu dphavm"
-  mobile={12}
-  offsetMobile={0}
+  className="sc-aXZVg bbxHZc"
 >
   <span>
     Subcomponent

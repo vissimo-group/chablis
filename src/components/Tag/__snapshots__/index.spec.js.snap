@@ -2,7 +2,7 @@
 
 exports[`Tag should render a Tag 1`] = `
 <span
-  className="sc-bcXGWu iPnWFZ"
+  className="sc-aXZVg jOKVwh"
 >
   Tag
 </span>

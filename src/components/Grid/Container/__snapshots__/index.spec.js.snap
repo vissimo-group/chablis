@@ -2,8 +2,7 @@
 
 exports[`Container should render a container div 1`] = `
 <div
-  className="sc-bcXGWu LcKUi"
-  full={false}
+  className="sc-aXZVg jGrAWV"
 >
   <span>
     Subcomponent

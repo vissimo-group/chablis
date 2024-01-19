@@ -2,8 +2,7 @@
 
 exports[`Card Should render the default card 1`] = `
 <div
-  className="sc-bcXGWu cWVAF"
-  darkenBackground={true}
+  className="sc-aXZVg bOiRjf"
   height=""
   width="337px"
 >
