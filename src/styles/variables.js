@@ -39,6 +39,11 @@ const colors = {
     secondary: '#F7F7F7',
   },
 
+  coupon: {
+    primary: '#FFFFFF',
+    secondary: '#F7F7F7',
+  },
+
   standard: {
     orange_1: '#FFB55F',
     orange_2: '#F49A30',
