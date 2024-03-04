@@ -38,6 +38,7 @@ export const CupomWrapper = styled.div`
         top: -28px;
         right: 108px;
         background: ${props => props.circleColor || colors.coupon.secondary};
+        border: 2px solid ${props => props.circleColor || colors.coupon.secondary};
         z-index: 0;
     }
 `;

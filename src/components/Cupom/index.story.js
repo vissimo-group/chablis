@@ -15,7 +15,7 @@ storiesOf('Cupom', module)
       title="Jim Beam White Kentucky"
       description={cupomDescription}
       code="JIMBEAM"
-      bg="#f7f7f7"
-      circleColor="#fff"
+      bg="#fff"
+      circleColor="#F7F7F7"
     />
   ));
