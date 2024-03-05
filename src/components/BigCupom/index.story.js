@@ -13,5 +13,13 @@ teste%20m%C3%AAs%20do%20consumidor/adega.png`;
 
 storiesOf('BigCupom', module)
   .addWithInfo('BigCupom', () => (
-    <BigCupom image={cumpomImage} title="Adega Philco" description={cupomDescription} />
+    <BigCupom
+      image={cumpomImage}
+      title="Adega Philco"
+      description={cupomDescription}
+      textColor=""
+      titleColor=""
+      bg=""
+      circleColor=""
+    />
   ));

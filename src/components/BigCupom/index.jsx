@@ -12,7 +12,7 @@ const BigCupomWrapper = styled(CupomWrapper)`
     border-radius: 8px;
     overflow: hidden;
     padding: 32px 0;
-    background-color: ${colors.standard.default_black};
+    background-color: ${props => props.bg || colors.standard.default_black};
 
     @media (min-width: ${breakpoints.NORMAL}) {
         flex-direction: row-reverse;
@@ -28,7 +28,7 @@ const BigCupomWrapper = styled(CupomWrapper)`
             border-radius: 40px;
             top: 131px;
             left: -40px;
-            background: white;
+            background: ${props => props.circleColor || colors.background.primary};
             z-index: 0;
         }
 
@@ -40,7 +40,7 @@ const BigCupomWrapper = styled(CupomWrapper)`
             border-radius: 40px;
             top: 131px;
             right: -40px;
-            background: white;
+            background: ${props => props.circleColor || colors.background.primary};
             z-index: 0;
         }
     }
@@ -106,7 +106,7 @@ const CupomTitle = styled.span`
     font-family: ${fonts.PAYTONE};
     margin-bottom: 0.5em;
     text-align: center;
-    color: white;
+    color: ${props => props.titleColor || colors.background.primary};
     text-transform: uppercase;
     font-size: 24px;
     font-weight: ${fontWeights.REGULAR};
@@ -123,7 +123,7 @@ const CupomTitle = styled.span`
 const CupomDescription = styled.div`
     text-align: center;
     font-family: ${fonts.BARLOW};
-    color: white;
+    color: ${props => props.textColor || colors.background.primary};
     font-size: 14px;
     line-height: 1.5;
 
@@ -139,14 +139,14 @@ const CupomDescription = styled.div`
 `;
 
 const BigCupom = ({
-  image, title, description,
+  image, title, description, textColor, titleColor, bg, circleColor,
 }) => (
-  <BigCupomWrapper>
+  <BigCupomWrapper bg={bg} circleColor={circleColor}>
     <CupomImage image={image} />
 
     <CupomDetails>
-      <CupomTitle>{title}</CupomTitle>
-      <CupomDescription>{description}</CupomDescription>
+      <CupomTitle titleColor={titleColor}>{title}</CupomTitle>
+      <CupomDescription textColor={textColor}>{description}</CupomDescription>
     </CupomDetails>
   </BigCupomWrapper>
 );
@@ -155,6 +155,10 @@ BigCupom.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
+  titleColor: PropTypes.string,
+  textColor: PropTypes.string,
+  bg: PropTypes.string,
+  circleColor: PropTypes.string,
 };
 
 export default BigCupom;
