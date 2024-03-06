@@ -1,5 +1,5 @@
 {
-  "name": "chablis1",
+  "name": "chablis",
   "version": "3.0.30",
   "description": "A mobile first frontend framework made with wine",
   "main": "dist/chablis.min.js",
