@@ -14,6 +14,7 @@ export const CupomWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    background: ${props => props.bg || colors.coupon.secondary};
 
     &:after {
         content: '';
@@ -23,9 +24,9 @@ export const CupomWrapper = styled.div`
         border-radius: 28px;
         bottom: -28px;
         right: 108px;
-        background: white;
+        background: ${props => props.circleColor || colors.coupon.secondary};
         z-index: 0;
-        border: 2px solid ${colors.neutrals.neutral_400};
+        border: 2px solid ${props => props.circleColor || colors.coupon.secondary};
     }
 
     &:before {
@@ -36,7 +37,8 @@ export const CupomWrapper = styled.div`
         border-radius: 28px;
         top: -28px;
         right: 108px;
-        background: white;
+        background: ${props => props.circleColor || colors.coupon.secondary};
+        border: 2px solid ${props => props.circleColor || colors.coupon.secondary};
         z-index: 0;
     }
 `;
@@ -84,11 +86,10 @@ const CupomDescription = styled.div`
 `;
 
 const Cupom = ({
-  image, title, description, code, helperText,
+  image, title, description, code, helperText, bg, circleColor,
 }) => (
-  <CupomWrapper>
+  <CupomWrapper bg={bg} circleColor={circleColor}>
     <CupomImage image={image} />
-
     <CupomDetails>
       <CupomTitle>{title}</CupomTitle>
       <CupomDescription>{description}</CupomDescription>
@@ -103,6 +104,13 @@ Cupom.propTypes = {
   description: PropTypes.string,
   code: PropTypes.string,
   helperText: PropTypes.string,
+  bg: PropTypes.string,
+  circleColor: PropTypes.string,
+};
+
+Cupom.defaultProps = {
+  bg: '#FFFFe',
+  circleColor: '#f1f1f1',
 };
 
 export default Cupom;

@@ -1,6 +1,6 @@
 {
   "name": "chablis",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A mobile first frontend framework made with wine",
   "main": "dist/chablis.min.js",
   "scripts": {
