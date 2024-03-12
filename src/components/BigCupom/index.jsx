@@ -139,7 +139,13 @@ const CupomDescription = styled.div`
 `;
 
 const BigCupom = ({
-  image, title, description, textColor, titleColor, bg, circleColor,
+  image,
+  title,
+  description,
+  textColor = colors.background.primary,
+  titleColor = colors.background.primary,
+  bg = colors.standard.default_black,
+  circleColor = colors.background.primary,
 }) => (
   <BigCupomWrapper bg={bg} circleColor={circleColor}>
     <CupomImage image={image} />
